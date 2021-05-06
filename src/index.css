@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* Custom CSS */
+
+.content-heading {
+  border-bottom: 1px solid black;
+  color: rgb(94, 97, 99);
+  color: purple;
+}
+
+.col-md-1,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-10,
+.col-md-11 {
+  padding: 0px !important;
+}
+
+/* folderAndFileDetails Comonent */
+
+.folderAndFileStructureImage {
+  width: 85%;
+}
+
+@media screen and (max-width: 900) {
+  .folderAndFileStructureImage {
+    width: 60%;
+  }
+}
+
+.code-snippet-textarea {
+  color: purple;
+  background-color: rgb(244, 225, 255);
+  width: 100%;
+  border: none;
+  min-height: 300px;
+  max-height: 500px;
+}
