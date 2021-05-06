@@ -5,6 +5,8 @@ export const routeLinks = {
     HowReactWorks : '/HowReactWorks',
     FunctionComponent : '/FunctionComponent',
     ClassComponent : '/ClassComponent',
+    StateAndProps : '/StateAndProps',
+    BestCodingPractices : '/BestCodingPractices'
 }
 
  export const AppName = 'Hello React';

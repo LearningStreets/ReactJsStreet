@@ -5,14 +5,14 @@ export class HomeComponent extends Component{
     render(){
         return(
           <div>
-              {/* <h3 style={{ "text-align":'center' }} > This is the 'Hello React' application.  </h3> */}
-                <h3 className="content-heading"> Introduction </h3> 
+              {/* <h4 style={{ "text-align":'center' }} > This is the 'Hello React' application.  </h4> */}
+                <h4 className="content-heading"> Introduction </h4> 
                 <p> React is a JavaScript library for building user interface.  </p>
                 <p>  Reference Link:  <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> reactjs</a> (check out the link to get more info about reactjs and to learn basic concepts.)
                 </p>
                 <br /><br />
 
-                <h3 className="content-heading"> Installation Guide </h3  > 
+                <h4 className="content-heading"> Installation Guide </h4  > 
                 <p> Lets install NodeJs such that we can work with that and also it will install npm (Node Package Manager) which will help us to install react packages.  </p>
                 <p>   Reference Link:  <a href="https://nodejs.org/en/" target="_blank" rel="noreferrer"> nodejs</a> (check out the link to get more about nodejs and installation setup.) </p>
                 <p> To begin with reactjs we need a package manager (which we already installed) such that we can install required packages. So we will install below package to create a new react app.  </p>
@@ -23,7 +23,7 @@ export class HomeComponent extends Component{
                  </p>
                 <br /><br />
 
-                <h3 className="content-heading"> Helpful Commands </h3> 
+                <h4 className="content-heading"> Helpful Commands </h4> 
                 <p> Run the below comamnds over cmd and point to the working directory.  </p>
                 <p>  <b> &gt; npm install create-react-app : </b> This package installation will help to create a react js app.</p>
                 <p>  <b> &gt; create-react-app hello-react: </b> Here we are creating a react app with the name of 'hello-react'.</p>

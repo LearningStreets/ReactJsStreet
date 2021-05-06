@@ -54,3 +54,7 @@ code {
   min-height: 300px;
   max-height: 500px;
 }
+
+.important-text {
+  color: purple;
+}

@@ -8,6 +8,8 @@ import {FolderAndFileDetailsComponent} from './components/folderAndFileDetailsCo
 import {HowReactWorksComponent} from './components/howReactWorksComponent';
 import FunctionComponent  from './components/functionComponent';
 import ClassComponent  from './components/classComponent';
+import StateAndPropsComponent from './components/stateAndPropsComponent';
+import { BestCodingPracticesComponent } from './components/bestCodingPracticesComponent';
 
 export const AppRoute= () => {
     return (
@@ -18,6 +20,8 @@ export const AppRoute= () => {
               <Route path={appConsts.routeLinks.HowReactWorks} component={HowReactWorksComponent} /> 
               <Route path={appConsts.routeLinks.FunctionComponent} component={FunctionComponent} /> 
               <Route path={appConsts.routeLinks.ClassComponent} component={ClassComponent} /> 
+              <Route path={appConsts.routeLinks.StateAndProps} component={StateAndPropsComponent} /> 
+              <Route path={appConsts.routeLinks.BestCodingPractices} component={BestCodingPracticesComponent} /> 
           </Switch>
         </Router>
     );
