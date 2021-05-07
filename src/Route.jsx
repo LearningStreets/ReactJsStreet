@@ -10,6 +10,8 @@ import FunctionComponent  from './components/functionComponent';
 import ClassComponent  from './components/classComponent';
 import StateAndPropsComponent from './components/stateAndPropsComponent';
 import { BestCodingPracticesComponent } from './components/bestCodingPracticesComponent';
+import { ReactFundamentalsComponent } from './components/reactFundamentalsComponent';
+import { EventHandlingComponent } from './components/eventHandlingComponent';
 
 export const AppRoute= () => {
     return (
@@ -21,7 +23,10 @@ export const AppRoute= () => {
               <Route path={appConsts.routeLinks.FunctionComponent} component={FunctionComponent} /> 
               <Route path={appConsts.routeLinks.ClassComponent} component={ClassComponent} /> 
               <Route path={appConsts.routeLinks.StateAndProps} component={StateAndPropsComponent} /> 
-              <Route path={appConsts.routeLinks.BestCodingPractices} component={BestCodingPracticesComponent} /> 
+              <Route path={appConsts.routeLinks.BestCodingPractices} component={BestCodingPracticesComponent} />
+              <Route path={appConsts.routeLinks.ReactFundamentals} component={ReactFundamentalsComponent} />
+              <Route path={appConsts.routeLinks.EventHandling} component={EventHandlingComponent} />
+               
           </Switch>
         </Router>
     );

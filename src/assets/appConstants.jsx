@@ -6,7 +6,13 @@ export const routeLinks = {
     FunctionComponent : '/FunctionComponent',
     ClassComponent : '/ClassComponent',
     StateAndProps : '/StateAndProps',
-    BestCodingPractices : '/BestCodingPractices'
+    BestCodingPractices : '/BestCodingPractices',
+    ReactFundamentals : '/ReactFundamentals',
+    EventHandling: '/EventHandling'
 }
 
- export const AppName = 'Hello React';
+ export const AppName = 'ReactJs Street';
+    
+ 
+
+ 

@@ -24,10 +24,10 @@ const _template = (
         <textarea className="code-snippet-textarea"  readOnly value={_htmlString} /> <br /> <br /> 
 
         <h4 className="content-heading"> Code Explanation </h4>  
-        <p> <code>  import &#123; React &#125;  from 'react';  </code>: We have to import this and this will help to render the dom.</p>
-        <p> <code>  function FunctionComponent() &#123; ..... &#125;   </code>: Function </p>
-        <p> <code>  const _template = ( ..... )  </code>: constant that is holding the html tag along with js</p>
-        <p> <code> export default FunctionComponent  </code>: Exporting</p>
+        <p> <span className="code-cursor"> &#187; </span>  <code>  import &#123; React &#125;  from 'react';  </code>: We have to import this and this will help to render the dom.</p>
+        <p> <span className="code-cursor"> &#187; </span>  <code>  function FunctionComponent() &#123; ..... &#125;   </code>: Function </p>
+        <p> <span className="code-cursor"> &#187; </span>  <code>  const _template = ( ..... )  </code>: constant that is holding the html tag along with js</p>
+        <p> <span className="code-cursor"> &#187; </span>  <code> export default FunctionComponent  </code>: Exporting</p>
     </div>
 
 )

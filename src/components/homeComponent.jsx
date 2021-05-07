@@ -6,7 +6,7 @@ export class HomeComponent extends Component{
         return(
           <div>
               {/* <h4 style={{ "text-align":'center' }} > This is the 'Hello React' application.  </h4> */}
-                <h4 className="content-heading"> Introduction </h4> 
+                <h4 className="content-heading"> What is ReactJs? </h4> 
                 <p> React is a JavaScript library for building user interface.  </p>
                 <p>  Reference Link:  <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> reactjs</a> (check out the link to get more info about reactjs and to learn basic concepts.)
                 </p>

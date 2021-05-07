@@ -14,6 +14,119 @@ code {
 
 /* Custom CSS */
 
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 15vh;
+  max-height: 15vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  z-index: 9999999;
+}
+
+.App-footer {
+  background-color: #282c34;
+  color: white;
+  font-size: calc(10px + 2vmin);
+  align-items: center;
+  text-align: center;
+  color: rgb(231, 228, 228);
+}
+
+/* .App-footer-github {
+  min-height: 8vh;
+  max-height: 8vh;
+  margin-top: 2vh;
+  border: 1px solid red;
+} */
+
+.githubLogo {
+  width: 6.5vh;
+  background-color: white;
+  border-radius: 360px;
+}
+
+.githubLogo:hover {
+  background-color: purple;
+}
+
+.App-heading {
+  background-color: #282c34;
+  font-family: "Calibri";
+  font-size: 40px;
+  text-align: center;
+  color: rgb(231, 228, 228);
+  font-size: calc(40px + 2vmin);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.row {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.router-container {
+  /* border-left: 1px solid lightgrey; */
+  /* margin: 1em 1em 1em 0em; */
+  padding: 1em 1em 5em 1em; /*top right bottom left*/
+  color: rgb(108, 110, 112);
+}
+
+.menu-list {
+  background-color: rgba(230, 223, 223, 0.884);
+}
+
+.menu-list > ul {
+  list-style: none;
+  margin: 0px !important;
+
+  padding: 1em 0em 0em 0em !important;
+}
+
+.menu-list > ul > li {
+  display: block;
+}
+
+.menu-list > ul > li > a {
+  text-decoration: none;
+  padding: 0.5em 1.5em 0.5em 1.5em;
+  display: block;
+  color: black;
+}
+
+.menu-list > ul > li > a:hover {
+  background-color: purple;
+  color: white;
+}
+
+.menu-list-a-active {
+  background-color: purple;
+  color: white !important;
+}
+
 .content-heading {
   border-bottom: 1px solid black;
   color: rgb(94, 97, 99);
@@ -34,6 +147,33 @@ code {
   padding: 0px !important;
 }
 
+.pd5 {
+  padding: 5px !important;
+}
+.pd10 {
+  padding: 10px !important;
+}
+.pd15 {
+  padding: 15px !important;
+}
+
+.purple-border {
+  border: 1px solid purple;
+}
+
+.purple-border-right {
+  border-right: 1px solid purple;
+}
+
+.fs3rem {
+  font-size: 3rem;
+}
+
+.code-cursor {
+  color: purple;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
 /* folderAndFileDetails Comonent */
 
 .folderAndFileStructureImage {
@@ -57,4 +197,119 @@ code {
 
 .important-text {
   color: purple;
+}
+
+.card-container {
+  font-family: "Calibri";
+  text-align: center;
+  position: relative;
+}
+
+.card-div {
+  min-height: 220px;
+  max-height: 220px;
+  margin: 20px;
+}
+
+.card-div > .card-heading {
+  color: white;
+  font-weight: 650;
+  font-size: 1.8rem;
+  min-height: 60px;
+  max-height: 60px;
+  border: 2px solid purple;
+  border-bottom: 1px solid white;
+  background-color: purple;
+}
+
+.card-div > .card-description {
+  font-size: 1.1rem;
+  min-height: 160px;
+  max-height: 160px;
+  background-color: rgba(202, 123, 202, 0.377);
+  border-bottom: 2px solid purple;
+}
+
+.feedback-textarea,
+.feedback-inputBox {
+  color: purple;
+  background-color: rgb(244, 225, 255);
+  font-family: "Calibri";
+  width: 90%;
+  border: none;
+  min-height: 12rem;
+  max-height: 12rem;
+  overflow: hidden;
+  font-size: 1.1rem;
+  padding: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.feedback-inputBox {
+  min-height: 3rem;
+  max-height: 3rem;
+}
+
+.feedback-button {
+  min-height: 3rem;
+  max-height: 3rem;
+  width: 25%;
+  color: purple;
+  background-color: rgb(244, 225, 255);
+  border: 1px solid purple;
+}
+
+.feedback-sendBtn1 {
+  cursor: pointer;
+  position: relative;
+  width: 0px;
+  height: 0px;
+  border-top: 40px solid transparent;
+  border-left: 80px solid purple;
+  border-bottom: 40px solid transparent;
+  display: inline-flex;
+  z-index: 99;
+  align-items: center;
+}
+
+.feedback-sendBtn2 {
+  position: absolute;
+  display: inline-flex;
+  width: 0px;
+  height: 0px;
+  border-top: 10px solid transparent;
+  border-left: 50px solid #282c34;
+  border-bottom: 10px solid transparent;
+  z-index: 99999;
+  left: -80px;
+}
+
+@keyframes sendBtnRotateFrame {
+  0% {
+  }
+
+  50% {
+    transform: rotate(-30deg);
+  }
+
+  100% {
+    transform: rotate(30deg);
+  }
+}
+
+/* @keyframes sendBtnFlyFrame {
+  0% {
+  }
+
+  100% {
+    margin-left: 3rem;
+    border-top: 15px solid transparent;
+    border-left: 30px solid purple;
+    border-bottom: 15px solid transparent;
+  }
+} */
+
+.feedback-sendBtn1:hover {
+  animation-name: sendBtnRotateFrame;
+  animation-duration: 3s;
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import {HashRouter as Router, Link} from 'react-router-dom';
+import {HashRouter as Router, Link, NavLink } from 'react-router-dom';
 import * as appConsts from '../assets/appConstants';
 
 export default function AppMenuComponent(){
@@ -7,22 +7,22 @@ export default function AppMenuComponent(){
  const _template = (
     <Router> 
         <ul>
-            <li><Link to={'/'} > Home </Link></li> 
-            <li><Link to={appConsts.routeLinks.FolderAndFileDetails} >Folder/File Details</Link></li>
-            <li><Link to={appConsts.routeLinks.HowReactWorks} >How React works?</Link></li>
-            <li><Link to={'/'} > What is JSX? </Link></li> 
-            <li><Link to={'/'} > Legendary 'Hello World' Program</Link></li>
-            <li><Link to={'/'} > React Terminology and Fundamentals</Link></li>
-            <li><Link to={appConsts.routeLinks.BestCodingPractices} > Best Coding Practices</Link></li>
-            <li><Link to={appConsts.routeLinks.FunctionComponent} >Function Component</Link></li>
-            <li><Link to={appConsts.routeLinks.ClassComponent} >Class Component</Link></li>
-            <li><Link to={appConsts.routeLinks.StateAndProps}  >State and Props</Link></li>
-            <li><Link to={'/'} >Handling Events</Link></li>
-            <li><Link to={'/'} >Conditional Rendering</Link></li>
-            <li><Link to={'/'} >Conditions/Loops</Link></li>
-            <li><Link to={'/'} >Routing</Link></li>
-            <li><Link to={'/'} >Forms</Link></li>
-            <li><Link to={'/'} >API</Link></li>
+            <li><NavLink exact to="/" activeClassName="menu-list-a-active" > Home </NavLink></li> 
+            <li><NavLink exact to={appConsts.routeLinks.FolderAndFileDetails}  activeClassName="menu-list-a-active" > Folder/File Details</NavLink></li>
+            <li><NavLink exact to={appConsts.routeLinks.HowReactWorks}   activeClassName="menu-list-a-active" >How React works?</NavLink></li>
+            <li><NavLink exact to={'/'}   activeClassName="menu-list-a-active" > What is JSX? </NavLink></li> 
+            <li><NavLink exact to={'/'}   activeClassName="menu-list-a-active" > Legendary 'Hello World' Program</NavLink></li>
+            <li><NavLink exact to={appConsts.routeLinks.ReactFundamentals}   activeClassName="menu-list-a-active" > React Terminology and Fundamentals</NavLink></li>
+            <li><NavLink exact to={appConsts.routeLinks.BestCodingPractices}  activeClassName="menu-list-a-active" > Best Coding Practices</NavLink></li>
+            <li><NavLink exact to={appConsts.routeLinks.FunctionComponent}  activeClassName="menu-list-a-active" >Function Component</NavLink></li>
+            <li><NavLink exact to={appConsts.routeLinks.ClassComponent}   activeClassName="menu-list-a-active" >Class Component</NavLink></li>
+            <li><NavLink exact to={appConsts.routeLinks.StateAndProps}    activeClassName="menu-list-a-active" >State and Props</NavLink></li>
+            <li><NavLink exact to={appConsts.routeLinks.EventHandling}   activeClassName="menu-list-a-active" >Event Handling</NavLink></li>
+            <li><NavLink exact to={'/'}   activeClassName="menu-list-a-active" >Conditional Rendering</NavLink></li>
+            <li><NavLink exact to={'/'}  activeClassName="menu-list-a-active" >Conditions/Loops</NavLink></li>
+            <li><NavLink exact to={'/'}   activeClassName="menu-list-a-active" >Routing</NavLink></li>
+            <li><NavLink exact to={'/'}   activeClassName="menu-list-a-active" >Forms</NavLink></li>
+            <li><NavLink exact to={'/'}   activeClassName="menu-list-a-active" >API</NavLink></li>
             
         </ul>
     </Router>

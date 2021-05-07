@@ -7,10 +7,17 @@ export class AppHeaderComponent extends Component{
   
     render(){
         return (
-        <header className="App-header row col-md-12">
-            <div className="col-md-1"> <img src={logo} width="100" className="App-logo" alt="logo" /> </div>
-            <div className="col-md-10 App-heading"> <span > {AppName} </span>  </div>
-        </header>
+
+        <div> 
+            <div className="App-header">
+            <img src={logo} width="100" className="App-logo" alt="logo" />  
+            </div>
+
+            <div className="App-heading">
+             {AppName}  
+            </div>
+
+        </div>
         );
     }
 }
