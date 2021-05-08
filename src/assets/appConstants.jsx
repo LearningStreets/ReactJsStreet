@@ -8,7 +8,8 @@ export const routeLinks = {
     StateAndProps : '/StateAndProps',
     BestCodingPractices : '/BestCodingPractices',
     ReactFundamentals : '/ReactFundamentals',
-    EventHandling: '/EventHandling'
+    EventHandling: '/EventHandling',
+    PassingDataBetweenComponents: '/PassingDataBetweenComponents'
 }
 
  export const AppName = 'ReactJs Street';

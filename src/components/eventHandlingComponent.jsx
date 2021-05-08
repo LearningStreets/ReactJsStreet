@@ -3,7 +3,8 @@ import {Component, React} from 'react';
 export class EventHandlingComponent extends Component{
   
     state = {
-        counter : 0
+        counter : 0,
+        buttonType: "None of the"
     }
 
     // below  method is not required if using arrrow function
@@ -45,7 +46,8 @@ export class EventHandlingComponent extends Component{
                 <h4 className="content-heading"> Event Handling </h4> 
                     <p> Event handling is an event to handle the action. An Action could be anything such as user cliked on a button, mousehover,
                         mousefocus etc. </p>
-
+                <h5 className="content-heading"> Sample Example - 1 </h5>
+                <p>Below example is for simple implementation of events. We are trying to understand how to handle events.</p> 
                 <div className="row col-md-12">
                     <div className="col-md-3 form-group pd10"> 
                         <strong>Currently Counter is: </strong> <br /> { this.formatCount() }  
@@ -56,13 +58,11 @@ export class EventHandlingComponent extends Component{
                     </div> 
 
                     <div className="col-md-9 form-group pd10"> 
-                        {/* <input className="form-control"  type="text"></input>  <br/>
-                        <button  className="btn btn-primary" type="button"> Click Me</button> */}
                         <textarea className="code-snippet-textarea"  readOnly value={_eventHandlingHtmlString_1} /> <br /> <br /> 
                     </div> 
                 </div>
                 
-                <h4 className="content-heading"> Code Explanation </h4> 
+                <h5 className="content-heading"> Code Explanation </h5> 
                 <p> <span className="code-cursor"> &#187; </span>   <code>  &#123; this.formatCount()  &#125;   </code>: An expression which calls custom method to get the count along with some custom formatting.</p>
                 <p> <span className="code-cursor"> &#187; </span>    <code>  onClick=&#123; this.IncrementCounter &#125;   </code>: A click event of a button which calls non-parameterized method  'IncrementCounter' </p>
                 <p> <span className="code-cursor"> &#187; </span>    <code>  IncrementCounter = () = &#62; &#123; 
@@ -82,6 +82,56 @@ export class EventHandlingComponent extends Component{
 
                  <p> <span className="code-cursor"> &#187; </span> <code> this.setState( .... ) </code> : 'setState' method will set the new value to the objects. By doing this React understands that current DOM requires some updation.
                  Hence as a result it compares the Current Vs New DOM and updates only required part not the full DOM.</p>
+
+                <br />
+                 <h5 className="content-heading"> Sample Example - 2</h5>
+                 <p>In this example we will see how we can pass the value to the event function. Like passing some id/text to the handling method.</p> 
+            
+                 <div className="row col-md-12">
+                    <div className="col-md-12  pd10"> 
+                        <strong>List of Buttons:</strong> <br />  
+                         
+                        <button className="btn btn-primary" type="button" onClick={() => this.printButtonType("Primary")}> Primary Button</button> 
+                        &nbsp;&nbsp;
+                        <button className="btn btn-warning" type="button" onClick={() => this.printButtonType("Warning")}> Warning Button</button> 
+                        &nbsp;&nbsp;
+                        <button className="btn btn-success" type="button" onClick={() => this.printButtonType("Success")}> Success Button</button> 
+                        &nbsp;&nbsp;
+                        <button className="btn btn-danger" type="button" onClick={() => this.printButtonType("Danger")}> Danger Button</button> 
+                        &nbsp;&nbsp;
+                        <button className="btn btn-info" type="button" onClick={() => this.printButtonType("Info")}> Info Button</button> 
+                        &nbsp;&nbsp;
+                        <button className="btn btn-dark" type="button" onClick={() => this.printButtonType("Dark")}> Dark Button</button> 
+                        &nbsp;&nbsp;
+                        <button className="btn btn-light" type="button" onClick={() => this.printButtonType("Light")}> Light Button</button> 
+                        &nbsp;&nbsp;
+                        <button className="btn btn-link" type="button" onClick={() => this.printButtonType("Link")}> Link Button</button> 
+
+                    </div> 
+                    <div className="col-md-12 form-group pd10" style={{'fontSize':'1.3rem'}}> 
+                        <span> You have clicked </span> : <strong> {this.state.buttonType + " Button"} </strong> 
+                    </div>
+                    
+                    <div className="col-md-12 form-group pd10"> 
+                        <p>  <span className="code-cursor"> &#187; </span>   The only change in the code would be related to event calling function: 
+                            <code>  onClick=&#123;() =&#62; this.printButtonType("Primary")&#125; </code>.
+                            Here we are passing "Primary" as a parameter to the <code> printButtonType </code> function. 
+                            Same as for the other buttons we are passing defferent text as per the "BootStrap CSS" type.
+                        </p>
+
+                        <p> <span className="code-cursor"> &#187; </span>  Nothing much in the body of function. It will look like this <br />
+                            <code>  printButtonType = (_buttonType) =&#62; &#123; <br />
+                            this.setState(&#123;buttonType : _buttonType&#125;);  &#125;
+                            </code>.
+                            Simply created a parameterized function and setting the new value to one of the state variable.
+                        </p>
+
+                        
+        
+    
+
+                    </div> 
+                </div>
             </div>
         );
     }
@@ -109,5 +159,10 @@ export class EventHandlingComponent extends Component{
     formatCount() {
         const { counter } = this.state;
         return counter === 0 ? <span className="text-warning fs3rem">  Zero  </span>: counter > 0 ? <span className="text-success fs3rem"> {counter} </span> : <span className="text-danger fs3rem">{counter} </span> ;
+    }
+
+    // Adding a method to print the button type
+    printButtonType = (_buttonType) => {
+        this.setState({buttonType : _buttonType});
     }
 }

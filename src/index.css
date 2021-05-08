@@ -250,15 +250,6 @@ code {
   max-height: 3rem;
 }
 
-.feedback-button {
-  min-height: 3rem;
-  max-height: 3rem;
-  width: 25%;
-  color: purple;
-  background-color: rgb(244, 225, 255);
-  border: 1px solid purple;
-}
-
 .feedback-sendBtn1 {
   cursor: pointer;
   position: relative;
@@ -312,4 +303,40 @@ code {
 .feedback-sendBtn1:hover {
   animation-name: sendBtnRotateFrame;
   animation-duration: 3s;
+}
+
+.footer-subheading {
+  font-size: 1.7rem;
+  font-family: "Calibri";
+  font-weight: 200;
+}
+.otherStreet,
+.contactUs {
+  text-align: left;
+}
+
+.otherStreet > ul,
+.contactUs > ul {
+  font-size: 1.1rem;
+  font-family: "Calibri";
+  font-weight: 200;
+  padding: 0px !important;
+  list-style: none;
+}
+
+.sourceCode-button {
+  text-decoration: none !important;
+  width: 25%;
+  color: white;
+  border: 1px solid white;
+  padding: 0.4rem;
+  border-radius: 10px;
+}
+
+.sourceCode-button:hover {
+  background-color: rgb(244, 225, 255);
+  text-decoration: none;
+  color: purple;
+  border: 1px solid purple;
+  border-radius: 10px;
 }
