@@ -1,6 +1,6 @@
 import {Component,React} from 'react';
 
-import folderAndFileStructureImage from '../assets/images/folderAndFileStructure.JPG';
+import folderAndFileStructureImage from '../assets/images/folderAndFileStructure.png';
  
  
 export class FolderAndFileDetailsComponent extends Component{

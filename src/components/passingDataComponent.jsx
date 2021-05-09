@@ -3,10 +3,6 @@ import { Component, React} from 'react';
  
 
 class  PassingDataBetweenComponent extends Component {   
-    constructor(props){
-        super(props);
-    } 
-
 
     render() { 
 
@@ -207,7 +203,7 @@ class C2PChildClassComponent extends Component {
                 Also creating a property <code> parentCallBack </code> to send the data from child component.</p>
                 <p>   
                 <code> getDataFromChildCallBackFunction = (dtFromChild) =&#62; &#123; <br />
-                       // update the state variable <br />
+                       &#47;&#47; update the state variable <br />
                         this.setState(&#125;dataFromChild : dtFromChild &#125;);  &#125;  </code>: 
                 Creating a body of the method <code>getDataFromChildCallBackFunction </code>. Simply assigning new value to the another property to display in parent component </p>
                 <p> <span className="code-cursor"> &#187; </span>
@@ -216,7 +212,7 @@ class C2PChildClassComponent extends Component {
 
                 <p> <span className="code-cursor"> &#187; </span>
                 <code>sendDataToParent = ()=&#62; &#125; <br />
-                     // assigning value to the call back function <br />
+                &#47;&#47; assigning value to the call back function <br />
                     this.props.parentCallBack("Sending data from child component");  &#125;  </code>: 
                 Body of the <code> sendDataToParent </code> method where we are setting a new text to the CallBack function. As soon as we will set the value,
                 this value will get assigned to the parent component.</p> 

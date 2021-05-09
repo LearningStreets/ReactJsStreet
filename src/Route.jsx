@@ -13,6 +13,8 @@ import { BestCodingPracticesComponent } from './components/bestCodingPracticesCo
 import { ReactFundamentalsComponent } from './components/reactFundamentalsComponent';
 import { EventHandlingComponent } from './components/eventHandlingComponent';
 import { PassingDataBetweenComponent } from './components/passingDataComponent';
+import { FeedBackComponent } from './components/feedbackComponent';
+import { JSXComponent } from './components/jsxComponent';
 
 export const AppRoute= () => {
     return (
@@ -28,7 +30,8 @@ export const AppRoute= () => {
               <Route path={appConsts.routeLinks.ReactFundamentals} component={ReactFundamentalsComponent} />
               <Route path={appConsts.routeLinks.EventHandling} component={EventHandlingComponent} />
               <Route path={appConsts.routeLinks.PassingDataBetweenComponents} component={PassingDataBetweenComponent} />
-               
+              <Route path={appConsts.routeLinks.FeedBack} component={FeedBackComponent} /> 
+              <Route path={appConsts.routeLinks.JSX} component={JSXComponent} />             
           </Switch>
         </Router>
     );

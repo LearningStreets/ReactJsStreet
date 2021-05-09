@@ -70,7 +70,7 @@ export class EventHandlingComponent extends Component{
                             Here we have used 'Arrow function' <code> () = &#62; &#123; ...... &#125;</code> concept. By using this no need to bind the <code>'this'  </code> object with the method. Means in React we can not use 'this' object directly.
                             Hence to use it we have to bind it inside the 'constructor' like below: <br/>
                             <code> constructor() &#123;  <br/>
-                                    // binding the method such that we can use 'this' keyword inside the body of 'IncrementCounter' method  <br/>
+                            &#47;&#47; binding the method such that we can use 'this' keyword inside the body of 'IncrementCounter' method  <br/>
                                     this.IncrementCounter = this.IncrementCounter.bind(this);  <br/>
                                      &#125;  </code>
                             if we don't do this, we will not be able to access 'this' it will simply throw 'undefined' error.  </p>
