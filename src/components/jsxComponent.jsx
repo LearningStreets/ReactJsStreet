@@ -20,7 +20,6 @@ export class JSXComponent extends Component{
                 <p> <span className="code-cursor"> &#187; </span>  <code>  const &#123; msg &#125;  = this.state;  </code>: An alternate way to extract the value of a property. 
                 Create a constant with the same name of the property which is declared inside the state proprty and store the data into it.
                 To use of the const we can directly use like this: <code>  &#123; msg &#125;  </code> </p>
-
                 <br />
                 <br />
                 <br />
