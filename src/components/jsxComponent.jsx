@@ -1,4 +1,5 @@
-import {Component, React} from 'react';
+import {Component, React} from 'react'; 
+
 
 export class JSXComponent extends Component{
   
@@ -21,6 +22,9 @@ export class JSXComponent extends Component{
                 To use of the const we can directly use like this: <code>  &#123; msg &#125;  </code> </p>
 
                 <br />
+                <br />
+                <br />
+ 
         </div>
         );
     }

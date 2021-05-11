@@ -6,7 +6,7 @@ export class HomeComponent extends Component{
         return(
           <div>
               {/* <h4 style={{ "text-align":'center' }} > This is the 'Hello React' application.  </h4> */}
-                <h4 className="content-heading"> What is ReactJs? </h4> 
+                <h4 className="content-heading"> About ReactJs </h4> 
                 <p> 
                 <span className="code-cursor"> &#187; </span>  <code> React </code> is a JavaScript library for building user interface.   <br />
                 <span className="code-cursor"> &#187; </span>  <code> React </code>  is used to build single page applications.   <br />  
@@ -19,7 +19,7 @@ export class HomeComponent extends Component{
                 </p>
                 <br /> 
 
-                <h4 className="content-heading"> Why ReactJs? </h4> 
+                <h5 className="content-heading"> Why ReactJs? </h5> 
                 <p> 
                 <code> React </code> is very beneficial in terms of rendering, understandability, performance and manageability.
                 </p>
