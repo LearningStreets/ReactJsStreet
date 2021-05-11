@@ -17,7 +17,8 @@ export class FolderAndFileDetailsComponent extends Component{
                 <p> <b> public: </b>  This is the folder info. <br />
                  &nbsp; &nbsp; &nbsp;  <b> favicon.ico: </b>  This is the file info.  <br />
                  &nbsp; &nbsp; &nbsp;  <b style={{"color":"Purple"}}> index.html: </b>  This is the file info.  <br />
-                 &nbsp; &nbsp; &nbsp;  <b style={{"color":"Purple"}}> manifest.json: </b>  This is the file info.  <br />
+                 &nbsp; &nbsp; &nbsp;  <b style={{"color":"Purple"}}> manifest.json: </b>  manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop.  <br />
                 </p>
                 <p> <b> src: </b>  This is the folder info. <br /> 
                  &nbsp; &nbsp; &nbsp;  <b style={{"color":"Purple"}}> assets: </b>  This is the folder info.  <br />

@@ -39,11 +39,7 @@ export const reactFundamentalsContent = [
         Heading: 'Fundamental 3',
         Description: 'This is the description.'
     },
-
-    {
-        Heading: 'Fundamental 3',
-        Description: 'This is the description'
-    }
+ 
 
 ]
 

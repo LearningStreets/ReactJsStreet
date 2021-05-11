@@ -7,11 +7,11 @@ export default function AppMenuComponent(){
  const _template = (
     <Router> 
         <ul>
-            <li><NavLink exact to="/" activeClassName="menu-list-a-active" > Home </NavLink></li> 
+            <li><NavLink exact to="/" activeClassName="menu-list-a-active" > What is ReactJs? </NavLink></li> 
             <li><NavLink exact to={appConsts.routeLinks.FolderAndFileDetails}  activeClassName="menu-list-a-active" > Folder/File Details</NavLink></li>
             <li><NavLink exact to={appConsts.routeLinks.HowReactWorks}   activeClassName="menu-list-a-active" >How React works?</NavLink></li>
-            <li><NavLink exact to={'/JSX'}   activeClassName="menu-list-a-active" > What is JSX? </NavLink></li> 
-            <li><NavLink exact to={'/'}   activeClassName="menu-list-a-active" > Legendary 'Hello World' Program</NavLink></li>
+            <li><NavLink exact to={appConsts.routeLinks.JSX}    activeClassName="menu-list-a-active" > What is JSX? </NavLink></li> 
+            <li><NavLink exact to={appConsts.routeLinks.HelloWorld}   activeClassName="menu-list-a-active" > Legendary 'Hello World' Program</NavLink></li>
             <li><NavLink exact to={appConsts.routeLinks.ReactFundamentals}   activeClassName="menu-list-a-active" > React Terminology and Fundamentals</NavLink></li>
             <li><NavLink exact to={appConsts.routeLinks.BestCodingPractices}  activeClassName="menu-list-a-active" > Best Coding Practices</NavLink></li>
             <li><NavLink exact to={appConsts.routeLinks.FunctionComponent}  activeClassName="menu-list-a-active" >Function Component</NavLink></li>
@@ -23,8 +23,7 @@ export default function AppMenuComponent(){
             <li><NavLink exact to={'/'}   activeClassName="menu-list-a-active" >Routing</NavLink></li>
             <li><NavLink exact to={'/'}   activeClassName="menu-list-a-active" >Forms</NavLink></li>
             <li><NavLink exact to={'/'}   activeClassName="menu-list-a-active" >API</NavLink></li>
-            <li><NavLink exact to={appConsts.routeLinks.FeedBack}   activeClassName="menu-list-a-active" >Feedback</NavLink></li>
-            
+            <li><NavLink exact to={appConsts.routeLinks.FeedBack}   activeClassName="menu-list-a-active" >Feedback</NavLink></li> 
         </ul>
     </Router>
  )

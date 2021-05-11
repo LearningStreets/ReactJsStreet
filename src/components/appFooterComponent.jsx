@@ -78,7 +78,7 @@ class AppFooterComponent extends Component{
                 </div> 
                 <div className="col-md-12" style={{'textAlign':'center', 'padding': '3rem', 'backgroundColor':'#21232b'}}> 
                     <a className="sourceCode-button" href="https://github.com/LearningStreets/ReactJsStreet/tree/main" target="_blank" rel="noreferrer">
-                        Get the source code &#60; / &#62;   
+                        Get the source code &#60;/&#62;  
                     </a> 
                 </div> 
             </footer>

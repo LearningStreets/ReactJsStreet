@@ -11,7 +11,8 @@ export const routeLinks = {
     EventHandling: '/EventHandling',
     PassingDataBetweenComponents: '/PassingDataBetweenComponents',
     FeedBack : '/FeedBack',
-    JSX : '/JSX'
+    JSX : '/JSX',
+    HelloWorld : '/HelloWorld'
 }
 
  export const AppName = 'ReactJs Street';
