@@ -20,7 +20,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "node buildVersionIncrement.js && react-scripts build && gh-pages -d build"
+    "deploy": "node ./src/nodeJs/buildVersionIncrement.js && react-scripts build && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
