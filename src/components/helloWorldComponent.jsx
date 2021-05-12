@@ -21,7 +21,7 @@ render() {
 
         <div><strong> Below is the example of basic <code>Hello World Application</code></strong> <br />
         Here we just need only two files <code> index.js </code> and  <code> index.html </code> <br/>  
-        <span className="code-cursor"> &#187; </span>   <code> index.html :</code> In this file we are havig are metadata and one <code> div </code> with id="root"; we need this to render our content in it. <br />
+        <span className="code-cursor"> &#187; </span>   <code> index.html :</code> In this file we are having are metadata and one <code> div </code> with id="root"; we need this to render our content in it. <br />
         <span className="code-cursor"> &#187; </span>  <code> index.js :</code> In this file we are having basic structure of <code> React Elements</code>. Elaborating further:
                     <ul> 
                         <li>
@@ -34,7 +34,7 @@ render() {
                             Creating a constant with name <code> element </code> and assigning <code>  html content </code> along with <code> JavaScript elements</code>; called <code>JSX</code>.
                         </li>
                         <li>
-                            Finally calling <code> ReactDOM.render() </code> method to tell the React that we want to render the passed <code> element </code> inside passed <code> elementid ("root") </code>.
+                            Finally calling <code> ReactDOM.render() </code> method to tell the React that we want to render the passed <code> element </code> inside passed <code> elementId ("root") </code>.
                             As a result React will create a DOM for the passed parameters and display the content on browser. (Refer second screenshot)
                         </li>
                     </ul>

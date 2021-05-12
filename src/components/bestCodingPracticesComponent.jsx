@@ -5,7 +5,7 @@ export class BestCodingPracticesComponent extends Component {
 
     render(){
         
-         const _tamplate = (
+         const _template = (
 
             <div className="card-container row col-md-12"> 
         
@@ -21,7 +21,7 @@ export class BestCodingPracticesComponent extends Component {
             </div>
          )
          
-         return _tamplate;
+         return _template;
         
     }
 }

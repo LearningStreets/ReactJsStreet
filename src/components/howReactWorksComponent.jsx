@@ -14,7 +14,7 @@ render(){
     return (
     <div>
          <h3> This is how react works page</h3>
-        <ChildClassComponent parentText="Text from another componet" />
+        <ChildClassComponent parentText="Text from another component" />
         <ChildClassComponent parentText={this.state.msgToChild}/>
     </div>
        

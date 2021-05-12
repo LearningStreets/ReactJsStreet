@@ -1,3 +1,10 @@
+:root {
+  --theme-color: purple;
+  --header-footer-bg-color: #282c34;
+  --card-bg-color: rgba(128, 0, 128, 0.2);
+  --card-border-color: rgba(128, 0, 128, 0.8);
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -26,7 +33,7 @@ code {
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: var(--header-footer-bg-color);
   min-height: 15vh;
   max-height: 15vh;
   display: flex;
@@ -35,8 +42,28 @@ code {
   z-index: 9999999;
 }
 
+.App-theme-btn-div {
+  background-color: var(--header-footer-bg-color);
+  text-align: right;
+  padding-right: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.App-theme-btn-div > span {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  margin-right: 1.1rem;
+  border-radius: 360px;
+  cursor: pointer;
+}
+.App-theme-btn-div > span:hover,
+.App-theme-btn-selected {
+  border: 2px solid white;
+}
+
 .App-footer {
-  background-color: #282c34;
+  background-color: var(--header-footer-bg-color);
   color: white;
   font-size: calc(10px + 2vmin);
   align-items: center;
@@ -58,16 +85,17 @@ code {
 }
 
 .githubLogo:hover {
-  background-color: purple;
+  background-color: var(--theme-color);
 }
 
 .App-heading {
-  background-color: #282c34;
+  background-color: var(--header-footer-bg-color);
   font-family: "Calibri";
   font-size: 40px;
   text-align: center;
   color: rgb(231, 228, 228);
   font-size: calc(40px + 2vmin);
+  color: var(--theme-color);
 }
 
 .App-link {
@@ -118,19 +146,19 @@ code {
 }
 
 .menu-list > ul > li > a:hover {
-  background-color: purple;
+  background-color: var(--theme-color);
   color: white;
 }
 
 .menu-list-a-active {
-  background-color: purple;
+  background-color: var(--theme-color);
   color: white !important;
 }
 
 .content-heading {
   border-bottom: 1px solid black;
   color: rgb(94, 97, 99);
-  color: purple;
+  color: var(--theme-color);
 }
 
 .col-md-1,
@@ -158,11 +186,27 @@ code {
 }
 
 .purple-border {
-  border: 1px solid purple;
+  border: 1px solid var(--theme-color);
+}
+
+.pd1rem-left {
+  padding-left: 1rem;
+}
+
+.pd1-5rem-left {
+  padding-left: 1.5rem;
+}
+
+.pd2rem-left {
+  padding-left: 2rem;
+}
+
+.theme-color-text {
+  color: var(--theme-color);
 }
 
 .purple-border-right {
-  border-right: 1px solid purple;
+  border-right: 1px solid var(--theme-color);
 }
 
 .fs3rem {
@@ -170,7 +214,7 @@ code {
 }
 
 .code-cursor {
-  color: purple;
+  color: var(--theme-color);
   font-size: 1.5rem;
   font-weight: 500;
 }
@@ -189,8 +233,8 @@ code {
 } */
 
 .code-snippet-textarea {
-  color: purple;
-  background-color: rgb(244, 225, 255);
+  color: var(--theme-color);
+  background-color: var(--card-bg-color);
   width: 100%;
   border: none;
   min-height: 18rem;
@@ -198,7 +242,7 @@ code {
 }
 
 .important-text {
-  color: purple;
+  color: var(--theme-color);
 }
 
 .card-container {
@@ -218,7 +262,7 @@ code {
   font-size: 1.6rem;
   min-height: 3rem;
   max-height: 3rem;
-  background-color: purple;
+  background-color: var(--theme-color);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
@@ -227,8 +271,8 @@ code {
   font-size: 1.1rem;
   min-height: 13rem;
   max-height: 13rem;
-  background-color: rgba(202, 123, 202, 0.377);
-  border-bottom: 2px solid rgba(202, 123, 202, 0.8);
+  background-color: var(--card-bg-color);
+  border-bottom: 2px solid var(--card-border-color);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   text-align: justify;
@@ -237,8 +281,7 @@ code {
 
 .feedback-textarea,
 .feedback-inputBox {
-  color: purple;
-  background-color: rgb(244, 225, 255);
+  color: var(--theme-color);
   font-family: "Calibri";
   width: 90%;
   border: none;
@@ -261,7 +304,7 @@ code {
   width: 0px;
   height: 0px;
   border-top: 40px solid transparent;
-  border-left: 80px solid purple;
+  border-left: 80px solid var(--theme-color);
   border-bottom: 40px solid transparent;
   display: inline-flex;
   z-index: 99;
@@ -274,7 +317,7 @@ code {
   width: 0px;
   height: 0px;
   border-top: 10px solid transparent;
-  border-left: 50px solid #282c34;
+  border-left: 50px solid var(--header-footer-bg-color);
   border-bottom: 10px solid transparent;
   z-index: 99999;
   left: -80px;
@@ -300,11 +343,15 @@ code {
   100% {
     margin-left: 3rem;
     border-top: 15px solid transparent;
-    border-left: 30px solid purple;
+    border-left: 30px solid var(--theme-color);
     border-bottom: 15px solid transparent;
   }
 } */
-
+.feedback-sendBtnContainer {
+  text-align: left;
+  align-self: end;
+  margin-bottom: 2rem;
+}
 .feedback-sendBtn1:hover {
   animation-name: sendBtnRotateFrame;
   animation-duration: 3s;
@@ -330,7 +377,7 @@ code {
   font-size: 2rem;
   min-height: 10rem;
   max-height: 10rem;
-  background-color: purple;
+  background-color: var(--theme-color);
   padding: 0.5rem !important;
   text-align: center !important;
   display: flex;
@@ -345,9 +392,9 @@ code {
   font-size: 1.2rem;
   min-height: 10rem;
   max-height: 10rem;
-  background-color: rgba(202, 123, 202, 0.377);
+  background-color: var(--card-bg-color);
   padding: 0.5rem !important;
-  border-bottom: 3px solid purple;
+  border-bottom: 3px solid var(--theme-color);
 }
 
 .footer-subheading {
@@ -369,6 +416,19 @@ code {
   list-style: none;
 }
 
+.footer-getCode {
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  background-color: #21232b;
+}
+
+.footer-buildVersion {
+  font-family: "Calibri";
+  font-size: 0.9rem;
+  font-weight: 100;
+}
+
 .sourceCode-button {
   text-decoration: none !important;
   width: 25%;
@@ -381,8 +441,8 @@ code {
 .sourceCode-button:hover {
   background-color: rgb(244, 225, 255);
   text-decoration: none;
-  color: purple;
-  border: 1px solid purple;
+  color: var(--theme-color);
+  border: 1px solid var(--theme-color);
   border-radius: 10px;
 }
 

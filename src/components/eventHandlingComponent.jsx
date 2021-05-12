@@ -7,7 +7,7 @@ export class EventHandlingComponent extends Component{
         buttonType: "None of the"
     }
 
-    // below  method is not required if using arrrow function
+    // below  method is not required if using arrow function
     // constructor() {
 
     //     super(); // We are calling this to use constructor
@@ -27,7 +27,7 @@ export class EventHandlingComponent extends Component{
   <button className="btn btn-primary form-control" type="button" onClick={this.IncrementCounter}> Increment</button> 
   <button className="btn btn-danger form-control" type="button" onClick={ () => {this.setState({counter : this.state.counter - 1})}}> Decrement</button>
                
-  // Adding arrow functon for Increasing counter value. By this arrow function we can avoid binding in constructor
+  // Adding arrow function for Increasing counter value. By this arrow function we can avoid binding in constructor
   IncrementCounter = () => {
   // we have to tell the react that something got changed such that react can update the dom  
   this.setState({counter : this.state.counter + 1}); 
@@ -44,8 +44,8 @@ export class EventHandlingComponent extends Component{
         return (
             <div> 
                 <h4 className="content-heading"> Event Handling </h4> 
-                    <p> Event handling is an event to handle the action. An Action could be anything such as user cliked on a button, mousehover,
-                        mousefocus etc. </p>
+                    <p> Event handling is an event to handle the action. An Action could be anything such as user clicked on a button, mouse-hover,
+                        mouse-focus etc. </p>
                 <h5 className="content-heading"> Sample Example - 1 </h5>
                 <p>Below example is for simple implementation of events. We are trying to understand how to handle events.</p> 
                 <div className="row col-md-12">
@@ -80,7 +80,7 @@ export class EventHandlingComponent extends Component{
                  Okay so, this is because React is a JavaScript not a template engine. So we have to tell the React that something got changed so update the DOM. </p>
 
 
-                 <p> <span className="code-cursor"> &#187; </span> <code> this.setState( .... ) </code> : 'setState' method will set the new value to the objects. By doing this React understands that current DOM requires some updation.
+                 <p> <span className="code-cursor"> &#187; </span> <code> this.setState( .... ) </code> : 'setState' method will set the new value to the objects. By doing this React understands that current DOM requires some update.
                  Hence as a result it compares the Current Vs New DOM and updates only required part not the full DOM.</p>
 
                 <br />
@@ -116,7 +116,7 @@ export class EventHandlingComponent extends Component{
                         <p>  <span className="code-cursor"> &#187; </span>   The only change in the code would be related to event calling function: 
                             <code>  onClick=&#123;() =&#62; this.printButtonType("Primary")&#125; </code>.
                             Here we are passing "Primary" as a parameter to the <code> printButtonType </code> function. 
-                            Same as for the other buttons we are passing defferent text as per the "BootStrap CSS" type.
+                            Same as for the other buttons we are passing different text as per the "BootStrap CSS" type.
                         </p>
 
                         <p> <span className="code-cursor"> &#187; </span>  Nothing much in the body of function. It will look like this <br />
@@ -145,12 +145,12 @@ export class EventHandlingComponent extends Component{
     //     // to avoid the binding we have to use arrow function because it don't rebind it instead it inherited it
     // }
 
-    // Arrow functon
+    // Arrow function
     IncrementCounter = () => {
         this.setState({counter : this.state.counter + 1}); // we have to tell the react that something got changed such that react can update the dom  
     }
 
-    // Arrow functon
+    // Arrow function
    DecrementCounter = () => {
         this.setState({counter : this.state.counter - 1}); // we have to tell the react that something got changed such that react can update the dom  
     }

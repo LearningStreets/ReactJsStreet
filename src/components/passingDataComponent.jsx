@@ -7,7 +7,7 @@ class  PassingDataBetweenComponent extends Component {
     render() { 
 
  const _p2cUsingFCHtmlString = ( 
-`// Creating function component for parent and passing text to child functioncomponent
+`// Creating function component for parent and passing text to child FunctionComponent
 function ParentFunctionComponent() {
     const _parentTemplate = (
        <div style={{'border':'1px solid purple', 'padding':'1rem'}}> 
@@ -82,7 +82,7 @@ class ChildClassComponent extends Component {
 
 `// Creating class component for parent and passing text to child class component
 class C2PParentClassComponent extends Component{
-    // Let's creata a variable to store the data from child component
+    // Let's create a variable to store the data from child component
     state={
         dataFromChild : "Default text in parent component itself"
     }
@@ -135,7 +135,7 @@ class C2PChildClassComponent extends Component {
         const _template = (
             <div> 
                 <h4 className="content-heading"> Passing Data From Parent To Child </h4> 
-                <p> There are two approaches to acheive this</p>
+                <p> There are two approaches to achieve this</p>
                 <p> 1. Passing the property using <code> Function Components</code> </p>
                 <p> 2. Using <code>props</code> (works with <code>Class Components</code>) </p>
                
@@ -288,7 +288,7 @@ class ChildClassComponent extends Component {
 // ****************************************** Child to Parent Component
 // Creating class component for parent and passing text to child class component
 class C2PParentClassComponent extends Component{
-    // Let's creata a variable to store the data from child component
+    // Let's create a variable to store the data from child component
     state={
         dataFromChild : "Default text in parent component itself"
     }

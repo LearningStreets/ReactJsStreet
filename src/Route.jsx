@@ -16,6 +16,7 @@ import { PassingDataBetweenComponent } from './components/passingDataComponent';
 import { FeedBackComponent } from './components/feedbackComponent';
 import { JSXComponent } from './components/jsxComponent';
 import { HelloWorldComponent } from './components/helloWorldComponent';
+import { ReactLifecycleComponent } from './components/reactLifecycleComponent';
 
 export const AppRoute= () => {
     return (
@@ -34,6 +35,7 @@ export const AppRoute= () => {
               <Route path={appConsts.routeLinks.FeedBack} component={FeedBackComponent} /> 
               <Route path={appConsts.routeLinks.JSX} component={JSXComponent} />   
               <Route path={appConsts.routeLinks.HelloWorld} component={HelloWorldComponent} />   
+              <Route path={appConsts.routeLinks.ReactLifecycle} component={ReactLifecycleComponent} />  
           </Switch>
         </Router>
     );

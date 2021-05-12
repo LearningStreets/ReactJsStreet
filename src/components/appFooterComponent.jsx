@@ -1,5 +1,5 @@
 import { React, Component} from 'react';
-
+import buildInfo from '../assets/buildInfo.json'; 
 
 class AppFooterComponent extends Component{
 
@@ -7,6 +7,7 @@ class AppFooterComponent extends Component{
         const _template = (
         <div>
             <footer className="App-footer">
+                
             <div className="row col-md-12">
                     <div  className="col-md-5">
                     <br />
@@ -15,8 +16,8 @@ class AppFooterComponent extends Component{
                         <textarea className="feedback-textarea" placeholder="Please share your feedback" maxLength="350"   />   
                         
                     </div>
-                    <div  className="col-md-1" style={{'textAlign':'left', 'alignSelf':'end', 'marginBottom':'2rem'}}>  
-                    <div   className="feedback-sendBtn1"> 
+                    <div  className="col-md-1 feedback-sendBtnContainer">  
+                    <div onClick={this.getFeedback}  className="feedback-sendBtn1"> 
                             <div className="feedback-sendBtn2"> 
                             </div>
                         </div> 
@@ -76,10 +77,12 @@ class AppFooterComponent extends Component{
                     </div>
                 </div> 
                 </div> 
-                <div className="col-md-12" style={{'textAlign':'center', 'padding': '3rem', 'backgroundColor':'#21232b'}}> 
+                <div className="col-md-12 footer-getCode" > 
                     <a className="sourceCode-button" href="https://github.com/LearningStreets/ReactJsStreet/tree/main" target="_blank" rel="noreferrer">
                         Get the source code &#60;/&#62;  
                     </a> 
+                    <br /> <br />
+                    <small className="footer-buildVersion"> App Version:  {buildInfo.buildMajor +'.' + buildInfo.buildMinor +'.' + buildInfo.buildRevision +'  | '+ buildInfo.buildTag }</small>
                 </div> 
             </footer>
         </div>
@@ -91,7 +94,11 @@ class AppFooterComponent extends Component{
 
     
 
-   // addFeedback = () => {
+   getFeedback = () => {
+
+    
+   // AddFeedback("Method", "By Method");
+ 
     //const editJsonFile = require("edit-json-file");
     // If the file doesn't exist, the content will be an empty object by default.
     //let file = editJsonFile('../assets/feedbackData.json');
@@ -110,7 +117,7 @@ class AppFooterComponent extends Component{
     // Output the whole thing
     //console.log(file.toObject());
 
-   // }
+ }
 }
 
 
