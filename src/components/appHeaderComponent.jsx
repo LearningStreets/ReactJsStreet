@@ -1,5 +1,11 @@
 import {Component, React} from 'react';
-import logo from '../logo.svg';
+// import logo from '../logo.svg';
+// import logo from '../logo.png';
+// import logo from '../logo1.PNG';
+//import logo from '../logo2.PNG';
+import logo from '../logo3.PNG';
+
+//import logo from '../assets/logo/logo6.SVG';
 // importing app name from constant file
 import { AppName }  from '../assets/appConstants';
 
@@ -37,23 +43,34 @@ export class AppHeaderComponent extends Component{
 
     render(){
         return (
-        <div> 
-            <div className="App-header">
-            <img src={logo} width="100" className="App-logo" alt="logo" />  
-            </div>
+        
+            <div className="App-header-div row col-md-12"> 
 
-            <div className="App-heading">
-             {AppName} 
-            </div>
+                 <div className="App-logo-div col-md-2"> 
+                    <div id="imgDiv"> 
+                      <img src={logo}   className="App-logo" alt="logo" />  
+                    </div>
+                    
+                </div>
 
-            <div className="App-theme-btn-div">  
-                <span style={{'backgroundColor': this.state.themePurple}} onClick={(event)=> this.setTheme(event, "themePurple")} />
-                <span style={{'backgroundColor': this.state.themeGreen}} onClick={(event)=> this.setTheme(event, "themeGreen")} />
-                <span style={{'backgroundColor': this.state.themeHotPink}} onClick={(event)=> this.setTheme(event, "themeHotPink")} />
-                <span style={{'backgroundColor': this.state.themeOrangeRed}} onClick={(event)=> this.setTheme(event, "themeOrangeRed")} />
-            </div>
+                <div className="col-md-8">
+                    <div className="App-heading-div"> 
+                        <span className="App-heading">  {AppName}  <br />
+                             <span className="theme-color-text"> Street </span>  
+                        </span> 
+                    </div> 
+                </div> 
 
-        </div>
+                <div className="App-theme-btn-div col-md-2">  
+                    <span style={{'backgroundColor': this.state.themeOrangeRed}} onClick={(event)=> this.setTheme(event, "themeOrangeRed")} />
+                    <span style={{'backgroundColor': this.state.themeHotPink}} onClick={(event)=> this.setTheme(event, "themeHotPink")} />
+                    <span style={{'backgroundColor': this.state.themeGreen}} onClick={(event)=> this.setTheme(event, "themeGreen")} />
+                    <span style={{'backgroundColor': this.state.themePurple}} onClick={(event)=> this.setTheme(event, "themePurple")} />
+                    
+                    
+                    
+                </div>   
+            </div>
         );
     }
 }

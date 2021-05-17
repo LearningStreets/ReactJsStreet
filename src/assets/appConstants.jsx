@@ -1,23 +1,2 @@
 
-export const routeLinks = {
-
-    FolderAndFileDetails : '/FolderAndFileDetails',
-    HowReactWorks : '/HowReactWorks',
-    FunctionComponent : '/FunctionComponent',
-    ClassComponent : '/ClassComponent',
-    StateAndProps : '/StateAndProps',
-    BestCodingPractices : '/BestCodingPractices',
-    ReactFundamentals : '/ReactFundamentals',
-    EventHandling: '/EventHandling',
-    PassingDataBetweenComponents: '/PassingDataBetweenComponents',
-    FeedBack : '/FeedBack',
-    JSX : '/JSX',
-    HelloWorld : '/HelloWorld',
-    ReactLifecycle:'/ReactLifecycle'
-}
-
- export const AppName = 'ReactJs Street';
-    
- 
-
- 
+ export const AppName = 'ReactJs';

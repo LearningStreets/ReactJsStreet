@@ -1,6 +1,8 @@
 import { React, Component} from 'react';
 import buildInfo from '../assets/buildInfo.json'; 
 
+//import AddFeedback from '../nodeJs/addFeedback';
+
 class AppFooterComponent extends Component{
 
     render() {
@@ -96,6 +98,7 @@ class AppFooterComponent extends Component{
 
    getFeedback = () => {
 
+    //AddFeedback("Hardcoded", "This is also Hardcoded");
     
    // AddFeedback("Method", "By Method");
  

@@ -1,15 +1,18 @@
 // This script will add feedback into the feedbackData.json file 
 function AddFeedback(_name, _feedback) {
 
-    var filePath = '../assets/feedbackData.json';
+    var filePath = './src/assets/buildInfo.json';
     var fs = require('fs');
     fs.readFile(filePath,function(err,fileContent) {
         if (err) throw err;
-        var _feedbackData = JSON.parse(fileContent); 
+        var _feedbackData = JSON.parse(fileContent);
 
       //console.log("Before Update: ", _feedbackData.feedbackData); 
-        var max_value = Math.max(..._feedbackData.feedbackData.map(_data => {_data.feedbackCount}));
-
+      
+   
+      
+        var max_value = Math.max(..._feedbackData.feedbackData.map(_feedbackData.feedbackData, function(n, i) { return n.feedbackCount}));
+         // max_value = 10;
         //console.log("max value ", max_value);
         _feedbackData.feedbackData.push(
             {
@@ -27,4 +30,6 @@ function AddFeedback(_name, _feedback) {
        })
     });
 }
+
+module.exports = AddFeedback;
 

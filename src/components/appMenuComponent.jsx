@@ -1,34 +1,63 @@
 import React from 'react';
 import {HashRouter as Router, NavLink } from 'react-router-dom';
-import * as appConsts from '../assets/appConstants';
+import routeData from '../assets/routeConstants';
 
-export default function AppMenuComponent(){
+export default class AppMenuComponent extends React.Component{
+
+    constructor(props){
+        super(props)
+    }
+    render() {
 
  const _template = (
     <Router> 
+        <div className="menu-list-content">
+
+        <NavLink className="menu-home" onClick={() => this.hideMenuList("Home")}  exact to={"/"}   >
+            <i className="bi bi-house  theme-color-text" > </i> 
+        </NavLink>
+
+
+        
+            <i className="bi bi-x-circle close-menu" onClick={() => this.hideMenuList("")}></i>
+         
         <ul>
-            <li><NavLink exact to="/" activeClassName="menu-list-a-active" > What is ReactJs? </NavLink></li> 
-            <li><NavLink exact to={appConsts.routeLinks.FolderAndFileDetails}  activeClassName="menu-list-a-active" > Folder/File Structure</NavLink></li>
-            <li><NavLink exact to={appConsts.routeLinks.HowReactWorks}   activeClassName="menu-list-a-active" >How React works?</NavLink></li>
-            <li><NavLink exact to={appConsts.routeLinks.JSX}    activeClassName="menu-list-a-active" > What is JSX? </NavLink></li> 
-            <li><NavLink exact to={appConsts.routeLinks.HelloWorld}   activeClassName="menu-list-a-active" > Legendary 'Hello World' Program</NavLink></li>
-            <li><NavLink exact to={appConsts.routeLinks.ReactFundamentals}   activeClassName="menu-list-a-active" > React Terminology and Fundamentals</NavLink></li>
-            <li><NavLink exact to={appConsts.routeLinks.BestCodingPractices}  activeClassName="menu-list-a-active" > Best Coding Practices</NavLink></li>
-            <li><NavLink exact to={appConsts.routeLinks.FunctionComponent}  activeClassName="menu-list-a-active" >Function Component</NavLink></li>
-            <li><NavLink exact to={appConsts.routeLinks.ClassComponent}   activeClassName="menu-list-a-active" >Class Component</NavLink></li>
-            <li><NavLink exact to={appConsts.routeLinks.ReactLifecycle}   activeClassName="menu-list-a-active" >React Lifecycle</NavLink></li>
-            <li><NavLink exact to={appConsts.routeLinks.StateAndProps}    activeClassName="menu-list-a-active" >State and Props</NavLink></li>
-            <li><NavLink exact to={appConsts.routeLinks.EventHandling}   activeClassName="menu-list-a-active" >Event Handling</NavLink></li>
-            <li><NavLink exact to={appConsts.routeLinks.PassingDataBetweenComponents}    activeClassName="menu-list-a-active" >Passing Data Between Components</NavLink></li>
-            <li><NavLink exact to={'/'}  activeClassName="menu-list-a-active" >Conditions/Loops</NavLink></li>
-            <li><NavLink exact to={'/'}   activeClassName="menu-list-a-active" >Routing</NavLink></li>
-            <li><NavLink exact to={'/'}   activeClassName="menu-list-a-active" >Forms</NavLink></li>
-            <li><NavLink exact to={'/'}   activeClassName="menu-list-a-active" >API</NavLink></li>
-            <li><NavLink exact to={appConsts.routeLinks.FeedBack}   activeClassName="menu-list-a-active" >Feedback</NavLink></li> 
+
+            {routeData.map(_item => 
+                <li key={_item.routeKey}>
+                    <NavLink onClick={() => this.hideMenuList(_item.routeLinkText)}  exact to={_item.routePath}   activeClassName="menu-list-a-active" >
+                        {_item.routeLinkText} 
+                    </NavLink>
+                </li> 
+            )}
         </ul>
+        </div>
     </Router>
  )
 
  return _template;
 
 }
+
+// Below method is being called to hide menu
+hideMenuList = (_routeLinkText) => {
+    var list_container = document.getElementById("menu-list-container"); 
+        list_container.classList.add("menu-list-hide");
+        list_container.classList.remove("menu-list-show");
+        // removing blocked class to helper_div div such that user can access other elements
+        document.getElementById("menu-render-helper-div").classList.remove("action-blocked");
+        
+        //below will set the view on top
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        
+        // sending current route text to parent component
+        if(_routeLinkText !== "") {
+        this.props.ActiveRouteText(_routeLinkText);
+        }
+    } 
+}
+
+
+ 
+

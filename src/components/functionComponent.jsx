@@ -16,7 +16,7 @@ function FunctionComponent(){
 
 
 const _template = (
-    <div> 
+    <div>  
         <h4 className="content-heading"> Function Component Code Snippet </h4> 
         <p> Function component is component which contains functions. The name should start from capital letter otherwise we can not use it as a react tag</p>
 
@@ -34,6 +34,8 @@ const _template = (
      return  _template ; 
 }
 
-export default FunctionComponent
+
+
+export default FunctionComponent  
 
  
