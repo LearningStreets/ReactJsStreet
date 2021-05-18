@@ -1,11 +1,6 @@
 import {Component, React} from 'react';
-// import logo from '../logo.svg';
-// import logo from '../logo.png';
-// import logo from '../logo1.PNG';
-//import logo from '../logo2.PNG';
-import logo from '../logo3.PNG';
 
-//import logo from '../assets/logo/logo6.SVG';
+import logo from '../assets/logo/learningStreetsLogo.svg';
 // importing app name from constant file
 import { AppName }  from '../assets/appConstants';
 

@@ -21,33 +21,6 @@ code {
 
 /* Custom CSS */
 
-@keyframes App-logo-moving-road {
-  0% {
-    content: url("../assets/logo/logo1.SVG");
-  }
-  15% {
-    content: url("../assets/logo/logo2.SVG");
-  }
-  30% {
-    content: url("../assets/logo/logo3.SVG");
-  }
-  50% {
-    content: url("../assets/logo/logo4.SVG");
-  }
-  75% {
-    content: url("../assets/logo/logo5.SVG");
-  }
-  100% {
-    content: url("../assets/logo/logo6.SVG");
-  }
-}
-
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-moving-road infinite 4s linear;
-  }
-} */
-
 .App-header {
   min-height: 15vh;
   max-height: 15vh;
@@ -220,6 +193,7 @@ code {
 
 .menu-list-content > .menu-home {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .menu-route-text {
