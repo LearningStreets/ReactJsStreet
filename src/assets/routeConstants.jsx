@@ -1,6 +1,6 @@
 
-import { BeginWithReactComponent } from '../components/beginWithReactComponent';
-import { FolderAndFileDetailsComponent }  from '../components/folderAndFileDetailsComponent';
+import { AboutReactJsComponent } from '../components/aboutReactJsComponent';
+import { FirstReactAppComponent }  from '../components/firstReactAppComponent';
 import { HowReactWorksComponent } from '../components/howReactWorksComponent';
 import  FunctionComponent   from '../components/functionComponent';
 import ClassComponent  from '../components/classComponent';
@@ -16,16 +16,16 @@ import { ReactLifecycleComponent } from '../components/reactLifecycleComponent';
 
 const routeData = [
     {
-        routeKey:"BeginWithReact",
-        routePath:"/BeginWithReact",
+        routeKey:"AboutReactJs",
+        routePath:"/AboutReactJs",
         routeLinkText:"What is ReactJs?",
-        routeComponent: BeginWithReactComponent
+        routeComponent: AboutReactJsComponent
     },
     {
-        routeKey:"FolderAndFileDetails",
-        routePath:'/FolderAndFileDetails',
-        routeLinkText:"Folder/File Structure",
-        routeComponent: FolderAndFileDetailsComponent
+        routeKey:"FirstReactApp",
+        routePath:'/FirstReactApp',
+        routeLinkText:"My First React App",
+        routeComponent: FirstReactAppComponent
     },
     {
         routeKey:"HowReactWorks",

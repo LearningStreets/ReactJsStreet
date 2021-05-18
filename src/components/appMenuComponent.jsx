@@ -4,9 +4,6 @@ import routeData from '../assets/routeConstants';
 
 export default class AppMenuComponent extends React.Component{
 
-    constructor(props){
-        super(props)
-    }
     render() {
 
  const _template = (
@@ -16,11 +13,7 @@ export default class AppMenuComponent extends React.Component{
         <NavLink className="menu-home" onClick={() => this.hideMenuList("Home")}  exact to={"/"}   >
             <i className="bi bi-house  theme-color-text" > </i> 
         </NavLink>
-
-
-        
             <i className="bi bi-x-circle close-menu" onClick={() => this.hideMenuList("")}></i>
-         
         <ul>
 
             {routeData.map(_item => 

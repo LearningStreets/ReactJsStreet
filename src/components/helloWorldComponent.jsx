@@ -14,12 +14,15 @@ render() {
     <div>
         <h4 className="content-heading"> Hello World Application </h4> 
         <p> We can not start anything without legendary <code> Hello World</code> application. So here we are;
-        A simple React application requires majorly below elements:   <br />  
+        A simple React Application requires majorly below elements:   <br />  
         <span className="code-cursor"> &#187; </span>  One <code> .js </code> file which will contain the basic <code> React Component </code>which will help to render the data. <br />
         <span className="code-cursor"> &#187; </span>  Another elements is <code> .html </code> file which will contain the basic html elements along with that a place where we do render the <code> React Component</code>.
-        </p>  <br />
-
-        <div><strong> Below is the example of basic <code>Hello World Application</code></strong> <br />
+        </p> 
+        <i>
+            <b> Note</b> : Here we have created a custom application where we are just having required files/folders.
+        </i>
+        <br /> <br />
+        <div><strong> Below is the example of basic <code>Hello World Application. </code></strong>  
         Here we just need only two files <code> index.js </code> and  <code> index.html </code> <br/>  
         <span className="code-cursor"> &#187; </span>   <code> index.html :</code> In this file we are having are metadata and one <code> div </code> with id="root"; we need this to render our content in it. <br />
         <span className="code-cursor"> &#187; </span>  <code> index.js :</code> In this file we are having basic structure of <code> React Elements</code>. Elaborating further:
