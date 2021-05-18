@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/ReactJsStreet/static/css/main.6ac83128.chunk.css",
-    "main.js": "/ReactJsStreet/static/js/main.13a7acba.chunk.js",
-    "main.js.map": "/ReactJsStreet/static/js/main.13a7acba.chunk.js.map",
+    "main.css": "/ReactJsStreet/static/css/main.b69558ba.chunk.css",
+    "main.js": "/ReactJsStreet/static/js/main.e1de0a0c.chunk.js",
+    "main.js.map": "/ReactJsStreet/static/js/main.e1de0a0c.chunk.js.map",
     "runtime-main.js": "/ReactJsStreet/static/js/runtime-main.861ebd2f.js",
     "runtime-main.js.map": "/ReactJsStreet/static/js/runtime-main.861ebd2f.js.map",
     "static/css/2.cbb7c32d.chunk.css": "/ReactJsStreet/static/css/2.cbb7c32d.chunk.css",
@@ -12,21 +12,26 @@
     "static/js/3.dbdab4ea.chunk.js.map": "/ReactJsStreet/static/js/3.dbdab4ea.chunk.js.map",
     "index.html": "/ReactJsStreet/index.html",
     "static/css/2.cbb7c32d.chunk.css.map": "/ReactJsStreet/static/css/2.cbb7c32d.chunk.css.map",
-    "static/css/main.6ac83128.chunk.css.map": "/ReactJsStreet/static/css/main.6ac83128.chunk.css.map",
+    "static/css/main.b69558ba.chunk.css.map": "/ReactJsStreet/static/css/main.b69558ba.chunk.css.map",
     "static/js/2.85bf74a1.chunk.js.LICENSE.txt": "/ReactJsStreet/static/js/2.85bf74a1.chunk.js.LICENSE.txt",
+    "static/media/appComponent.572f99f2.png": "/ReactJsStreet/static/media/appComponent.572f99f2.png",
+    "static/media/appRendering.3e53a7e6.png": "/ReactJsStreet/static/media/appRendering.3e53a7e6.png",
+    "static/media/appStructure.ff36b1e4.png": "/ReactJsStreet/static/media/appStructure.ff36b1e4.png",
     "static/media/bootstrap-icons.css": "/ReactJsStreet/static/media/bootstrap-icons.dfd0ea12.woff2",
+    "static/media/createReactAppCommand.a8c8469b.png": "/ReactJsStreet/static/media/createReactAppCommand.a8c8469b.png",
     "static/media/custom-app.461ba2c7.zip": "/ReactJsStreet/static/media/custom-app.461ba2c7.zip",
-    "static/media/folderAndFileStructure.635ea9e1.png": "/ReactJsStreet/static/media/folderAndFileStructure.635ea9e1.png",
+    "static/media/folderAndFileStructure.60f135c5.png": "/ReactJsStreet/static/media/folderAndFileStructure.60f135c5.png",
     "static/media/helloWorld_Code.cd372c46.png": "/ReactJsStreet/static/media/helloWorld_Code.cd372c46.png",
     "static/media/helloWorld_UI.02192103.png": "/ReactJsStreet/static/media/helloWorld_UI.02192103.png",
-    "static/media/index.css": "/ReactJsStreet/static/media/logo6.80bcb8b3.SVG",
-    "static/media/logo3.9f0b1331.PNG": "/ReactJsStreet/static/media/logo3.9f0b1331.PNG"
+    "static/media/learningStreetsLogo.80bcb8b3.svg": "/ReactJsStreet/static/media/learningStreetsLogo.80bcb8b3.svg",
+    "static/media/myFirstReactAppNpmStartCommand.acf78560.png": "/ReactJsStreet/static/media/myFirstReactAppNpmStartCommand.acf78560.png",
+    "static/media/myFirstReactAppUI.7ca28d10.png": "/ReactJsStreet/static/media/myFirstReactAppUI.7ca28d10.png"
   },
   "entrypoints": [
     "static/js/runtime-main.861ebd2f.js",
     "static/css/2.cbb7c32d.chunk.css",
     "static/js/2.85bf74a1.chunk.js",
-    "static/css/main.6ac83128.chunk.css",
-    "static/js/main.13a7acba.chunk.js"
+    "static/css/main.b69558ba.chunk.css",
+    "static/js/main.e1de0a0c.chunk.js"
   ]
 }
