@@ -19,17 +19,12 @@ class App extends Component{
     
     return (
       <div>
-    
-          {/* <div id="firstLandingPageDiv">
-              <HomeComponent />
-          </div> */}
-          
           <div id="thisSiteContentDiv"> 
 
               {/* displaying app header */}
             <AppHeaderComponent />
             <div className="content-width">
-                <div className="open-menu-div"> 
+                <div id="menuDiv" className="open-menu-div"> 
                   <i className="bi bi-list open-menu" onClick={this.changeCss} ></i>  
                   <i className="bi bi-chevron-compact-right menu-chevron" ></i>  
                     {this.state.activeRouteLinkText === "Home" ? 
@@ -38,8 +33,7 @@ class App extends Component{
                     <span className="menu-route-text"> { this.state.activeRouteLinkText}   </span> 
                     }
                   
-                </div>
-
+                
                 {/* with the help of bootstrap css dividing the content into columns */}
                 {/* <div className="row col-md-12"> */}
                 
@@ -49,6 +43,10 @@ class App extends Component{
                       {/* displaying app menu */}
                       <AppMenuComponent ActiveRouteText={this.getActiveRouteLinkText} />
                   </div>
+
+
+                  </div>
+
               </div>
             
             <div className="col-md-12 pd0 content-width">
@@ -71,6 +69,23 @@ class App extends Component{
   getActiveRouteLinkText = (_newText) => {
     this.setState({activeRouteLinkText: _newText})
   }
+
+  componentDidMount() {
+
+    var menuDiv = document.getElementById("menuDiv");
+    var sticky = menuDiv.offsetTop;
+    document.addEventListener('scroll', () => {
+        if(window.pageYOffset > sticky) {
+          menuDiv.classList.add("stickyMenuDiv");
+        }
+
+        else {
+          menuDiv.classList.remove("stickyMenuDiv");
+        }
+       
+    });
+  }
+
 
   // componentDidMount() {
   //   // {this.checkActiveRouteLinkText()}

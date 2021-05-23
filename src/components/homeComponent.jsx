@@ -2,7 +2,6 @@ import {Component,React} from 'react';
 // import logo from '../assets/images/logo/learningStreetsLogo.png';
 // import reactStreetLogo from '../assets/images/logo/reactStreetLogo.png';
 import routeData from '../assets/constantFiles/routeConstants';
-
  
 export class HomeComponent extends Component{
     render(){
@@ -25,10 +24,10 @@ export class HomeComponent extends Component{
                     </div> 
                 </div> 
 
-                <div className="content-width" > 
+                <div  > 
                    <div className="homePage-quotes-div">
                     <p> 
-                        <q>This street will let you know understand the basics of <b> ReactJs</b> and help you to begin with it.</q>  
+                        <q>This street will make you understand the basics of <b> ReactJs</b> and help you to begin with it.</q>  
                     </p> 
                   </div> 
 
@@ -61,14 +60,20 @@ export class HomeComponent extends Component{
 
                   <div className="homePage-content-div col-md-12 pd0">
                       <div className="homePage-content-card">
-                        <p className="hpcc-heading"> Learning Content</p>
-                        <ul className="hpcc-description">
+                        <p className="hpcc-heading"> Learning Content </p>
+                        <div className="hpcc-learningContent">  
                           {routeData.map(_item => 
-                              <li key={_item.routeKey}>
-                                  <b> {_item.routeLinkText} :  </b>    {_item.routeLinkDescription}
-                              </li> 
+                              <div className="row col-md-12 pd0" key={_item.routeKey}>
+                                <div className="pageText col-md-4"> {_item.routeLinkText} </div> 
+                                <div className="col-md-8"> {_item.routeLinkDescription} </div> 
+                              </div> 
                           )}
-                        </ul> 
+
+                          <br /> 
+                          <i >
+                            <b> Note</b> : Kindly use above <code> Menu Icon (<i className="bi bi-list"></i>)</code> at top-left corner to read more about the content.
+                          </i>
+                         </div>   
                       </div>
                   </div>
                 </div>

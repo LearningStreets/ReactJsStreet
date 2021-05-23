@@ -4,7 +4,7 @@ import routeData from '../assets/constantFiles/routeConstants';
 
 export default class AppMenuComponent extends React.Component{
 
-    render() {
+render() {
 
  const _template = (
     <Router> 
