@@ -1,18 +1,18 @@
 
-import { AboutReactJsComponent } from '../components/aboutReactJsComponent';
-import { FirstReactAppComponent }  from '../components/firstReactAppComponent';
-import { HowReactWorksComponent } from '../components/howReactWorksComponent';
-import  FunctionComponent   from '../components/functionComponent';
-import ClassComponent  from '../components/classComponent';
-import { StateAndPropsComponent } from '../components/stateAndPropsComponent';
-import { BestCodingPracticesComponent } from '../components/bestCodingPracticesComponent';
-import { ReactFundamentalsComponent } from '../components/reactFundamentalsComponent';
-import { EventHandlingComponent } from '../components/eventHandlingComponent';
-import { PassingDataBetweenComponent } from '../components/passingDataComponent';
-import { FeedBackComponent } from '../components/feedbackComponent';
-import { JSXComponent } from '../components/jsxComponent';
-import { HelloWorldComponent } from '../components/helloWorldComponent';
-import { ReactLifecycleComponent } from '../components/reactLifecycleComponent';
+import { AboutReactJsComponent } from  '../../components/aboutReactJsComponent';
+import { FirstReactAppComponent }  from '../../components/firstReactAppComponent';
+import { HowReactWorksComponent } from '../../components/howReactWorksComponent';
+import  FunctionComponent   from '../../components/functionComponent';
+import ClassComponent  from '../../components/classComponent';
+import { StateAndPropsComponent } from '../../components/stateAndPropsComponent';
+import { BestCodingPracticesComponent } from '../../components/bestCodingPracticesComponent';
+import { ReactFundamentalsComponent } from '../../components/reactFundamentalsComponent';
+import { EventHandlingComponent } from '../../components/eventHandlingComponent';
+import { PassingDataBetweenComponent } from '../../components/passingDataComponent';
+import { FeedBackComponent } from '../../components/feedbackComponent';
+import { JSXComponent } from '../../components/jsxComponent';
+import { HelloWorldComponent } from '../../components/helloWorldComponent';
+import { ReactLifecycleComponent } from '../../components/reactLifecycleComponent';
 
 const routeData = [
     {

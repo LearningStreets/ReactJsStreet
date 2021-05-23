@@ -1,5 +1,5 @@
 import {Component, React} from 'react';
-import { reactFundamentalsContent } from '../assets/appDataContents';
+import { reactFundamentalsContent } from '../assets/constantFiles/appDataConstants';
 
 export class ReactFundamentalsComponent extends Component {
 

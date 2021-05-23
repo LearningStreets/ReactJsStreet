@@ -1,8 +1,8 @@
 import {Component, React} from 'react';
+import logo from '../assets/images/logo/learningStreetsLogo.png';
 
-import logo from '../assets/logo/learningStreetsLogo.svg';
 // importing app name from constant file
-import { AppName }  from '../assets/appConstants';
+import { AppName }  from '../assets/constantFiles/appConstants';
 
 export class AppHeaderComponent extends Component{
   
@@ -39,33 +39,39 @@ export class AppHeaderComponent extends Component{
     render(){
         return (
         
-            <div className="App-header-div row col-md-12"> 
+            // <div className="App-header-div row col-md-12"> 
+            <div className="App-header-div"> 
+            <div className="content-width" style={{"display":"flex"}}> 
+                    <img src={logo}   className="App-logo" alt="logo" />  
+                    <span className="App-heading">  {AppName} <br/> Street      
+                    </span> 
+                    <button type="button" >Docs</button>
+                
 
-                 <div className="App-logo-div col-md-2"> 
-                    <div id="imgDiv"> 
-                      <img src={logo}   className="App-logo" alt="logo" />  
-                    </div>
-                    
-                </div>
-
-                <div className="col-md-8">
-                    <div className="App-heading-div"> 
-                        <span className="App-heading">  {AppName}  <br />
-                             <span className="theme-color-text"> Street </span>  
-                        </span> 
-                    </div> 
+                <div className="social-media-div" > 
+                    <span >
+                        <i className="bi bi-facebook"></i> 
+                        <i className="bi bi-twitter"></i>  
+                    </span> 
                 </div> 
 
-                <div className="App-theme-btn-div col-md-2">  
+                
+
+                {/* <div className="App-heading-div"> 
+                    <span className="App-heading">  {AppName}  <br />
+                        <span className="theme-color-text"> Street </span>  
+                    </span> 
+                </div>   */}
+            </div>
+            </div>
+
+                /* <div className="App-theme-btn-div col-md-2">  
                     <span style={{'backgroundColor': this.state.themeOrangeRed}} onClick={(event)=> this.setTheme(event, "themeOrangeRed")} />
                     <span style={{'backgroundColor': this.state.themeHotPink}} onClick={(event)=> this.setTheme(event, "themeHotPink")} />
                     <span style={{'backgroundColor': this.state.themeGreen}} onClick={(event)=> this.setTheme(event, "themeGreen")} />
                     <span style={{'backgroundColor': this.state.themePurple}} onClick={(event)=> this.setTheme(event, "themePurple")} />
-                    
-                    
-                    
-                </div>   
-            </div>
+                </div>    */
+        
         );
     }
 }

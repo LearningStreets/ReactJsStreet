@@ -1,6 +1,6 @@
 import React from 'react';
 import {HashRouter as Router, NavLink } from 'react-router-dom';
-import routeData from '../assets/routeConstants';
+import routeData from '../assets/constantFiles/routeConstants';
 
 export default class AppMenuComponent extends React.Component{
 

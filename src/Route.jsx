@@ -1,9 +1,9 @@
 import {HashRouter as Router, Switch, Route} from 'react-router-dom';
 // importing constant file to read the links
-import routeData from './assets/routeConstants';
+import routeData from './assets/constantFiles/routeConstants';
 
 // Importing Component
-  import { HomeComponent } from './components/homeComponent';
+  // import { HomeComponent } from './components/homeComponent';
 
 
 export const AppRoute= () => {
@@ -14,7 +14,7 @@ export const AppRoute= () => {
                         <Route key={_item.routeKey}  path={_item.routePath} component={_item.routeComponent} />
                 )}
                 {/* Default Route */}
-                <Route exact path='/' component={HomeComponent} /> 
+                {/* <Route exact path='/' component={HomeComponent} />  */}
           </Switch>
         </Router>
      

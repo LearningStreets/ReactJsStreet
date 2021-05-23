@@ -1,5 +1,5 @@
 import {Component, React} from 'react';
-import { bestPracticeContent } from '../assets/appDataContents';
+import { bestPracticeContent } from '../assets/constantFiles/appDataConstants';
 
 export class BestCodingPracticesComponent extends Component {
 

@@ -4,7 +4,7 @@ import {AppRoute} from './Route';
 import AppMenuComponent from './components/appMenuComponent';
 import AppFooterComponent from './components/appFooterComponent';
 import {AppHeaderComponent} from './components/appHeaderComponent';
-
+import {HomeComponent} from './components/homeComponent';
 
 
 
@@ -16,50 +16,85 @@ class App extends Component{
 
   render() 
   {
+    
     return (
-        <div className="App">
-
-          {/* displaying app header */}
-          <AppHeaderComponent />
-
-          <div className="open-menu-div"> 
-            <i className="bi bi-list open-menu" onClick={this.changeCss} ></i>  
-            <i className="bi bi-chevron-compact-right menu-chevron" ></i>  
-              {this.state.activeRouteLinkText === "Home" ? 
-              <i className="bi bi-house menu-home theme-color-text" ></i> : 
-              <strong className="theme-color-text menu-route-text"> { this.state.activeRouteLinkText}   </strong> 
-              }
-            
-          </div>
-
-          {/* with the help of bootstrap css dividing the content into columns */}
-          {/* <div className="row col-md-12"> */}
+      <div>
+    
+          {/* <div id="firstLandingPageDiv">
+              <HomeComponent />
+          </div> */}
           
-            <div id="menu-render-helper-div" className="action-unblocked"></div>
-            <div  id="menu-list-container" className="col-md-3 menu-list-hide">
-              
-                {/* displaying app menu */}
-                <AppMenuComponent ActiveRouteText={this.getActiveRouteLinkText} />
-            </div>
+          <div id="thisSiteContentDiv"> 
 
-            <div className="col-md-12">
-              <div className="router-container"> 
-                {/* here the content of other page will get displayed */}
-                <AppRoute /> 
+              {/* displaying app header */}
+            <AppHeaderComponent />
+            <div className="content-width">
+                <div className="open-menu-div"> 
+                  <i className="bi bi-list open-menu" onClick={this.changeCss} ></i>  
+                  <i className="bi bi-chevron-compact-right menu-chevron" ></i>  
+                    {this.state.activeRouteLinkText === "Home" ? 
+                    <i className="bi bi-house menu-home theme-color-text" ></i> : 
+                    <span className="menu-route-text"> { this.state.activeRouteLinkText}   </span> 
+                    }
+                  
+                </div>
+
+                {/* with the help of bootstrap css dividing the content into columns */}
+                {/* <div className="row col-md-12"> */}
+                
+                  <div id="menu-render-helper-div" className="action-unblocked"></div>
+                  <div  id="menu-list-container" className="col-md-3 menu-list-hide">
+                    
+                      {/* displaying app menu */}
+                      <AppMenuComponent ActiveRouteText={this.getActiveRouteLinkText} />
+                  </div>
               </div>
-            </div>
-          {/* </div> */}
-
-          {/* displaying app footer */}
-          <AppFooterComponent /> 
-
-        </div>
+            
+            <div className="col-md-12 pd0 content-width">
+                <div className="router-container"> 
+                  {/* here the content of other page will get displayed */}
+                  <AppRoute /> 
+                </div>
+            </div> 
+            
+            {/* displaying app footer */}
+            <AppFooterComponent /> 
+          </div>
+         
+      </div>
+         
       ); 
   }
 
   // creating call back function to get the active route link text from Menu Component
   getActiveRouteLinkText = (_newText) => {
     this.setState({activeRouteLinkText: _newText})
+  }
+
+  componentDidMount() {
+    // {this.checkActiveRouteLinkText()}
+  }
+
+  checkActiveRouteLinkText = () => {
+    if(this.state.activeRouteLinkText === "Home")
+     {
+      var firstLandingPageDiv = document.getElementById("firstLandingPageDiv");
+      if (firstLandingPageDiv.classList.contains("displayNone")){
+        firstLandingPageDiv.classList.remove("displayNone");
+      }
+
+      document.getElementById("thisSiteContentDiv").classList.add("displayNone");
+     }
+     else
+     {
+
+      var thisSiteContentDiv = document.getElementById("thisSiteContentDiv");
+      if (thisSiteContentDiv.classList.contains("displayNone")){
+        thisSiteContentDiv.classList.remove("displayNone");
+      }
+      document.getElementById("firstLandingPageDiv").classList.add("displayNone"); 
+
+     }
   }
 
   // in the below method we are checking the css and applying additional css on the basis of checks

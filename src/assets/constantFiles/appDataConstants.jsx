@@ -13,7 +13,7 @@ export const bestPracticeContent = [
 
     {
         Heading: 'Modularity',
-        Description: 'In the coding modilarity should be there.'
+        Description: 'In the coding modularity should be there.'
     },
 
     {

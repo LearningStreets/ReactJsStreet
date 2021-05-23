@@ -1,5 +1,5 @@
 import { React, Component} from 'react';
-import buildInfo from '../assets/buildInfo.json'; 
+import buildInfo from '../assets/constantFiles/buildInfo.json'; 
 
 //import AddFeedback from '../nodeJs/addFeedback';
 
@@ -9,8 +9,9 @@ class AppFooterComponent extends Component{
         const _template = (
         <div>
             <footer className="App-footer">
-                
-            <div className="row col-md-12">
+            
+            <div className="content-width">
+            <div className="row col-md-12 content-width">
                     <div  className="col-md-5">
                     <br />
                         <span className="footer-subheading">   Pleased to listen from you </span> 
@@ -79,13 +80,18 @@ class AppFooterComponent extends Component{
                     </div>
                 </div> 
                 </div> 
-                <div className="col-md-12 footer-getCode" > 
+            </div>   
+
+             <div className="col-md-12 footer-getCode">   
+                <div className="content-width"  > 
                     <a className="sourceCode-button" href="https://github.com/LearningStreets/ReactJsStreet/tree/main" target="_blank" rel="noreferrer">
-                        Get the source code &#60;/&#62;  
+                            Get the source code &#60;/&#62;  
                     </a> 
                     <br /> <br />
                     <small className="footer-buildVersion"> App Version:  {buildInfo.buildMajor +'.' + buildInfo.buildMinor +'.' + buildInfo.buildRevision +'  | '+ buildInfo.buildTag }</small>
-                </div> 
+                </div>
+            </div>  
+            
             </footer>
         </div>
         )

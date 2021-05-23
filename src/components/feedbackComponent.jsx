@@ -1,7 +1,7 @@
 import {Component, React} from 'react';
 
 // import the json data from json file
-import  FeedBackData from '../assets/feedbackData.json';
+import  FeedBackData from '../assets/constantFiles/feedbackData.json';
 
 export class FeedBackComponent extends Component{
   
