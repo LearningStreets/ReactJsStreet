@@ -1,6 +1,8 @@
 import {Component,React} from 'react';
-import logo from '../assets/images/logo/learningStreetsLogo.png'
-import { Route, HashRouter as Router } from 'react-router-dom'
+// import logo from '../assets/images/logo/learningStreetsLogo.png';
+// import reactStreetLogo from '../assets/images/logo/reactStreetLogo.png';
+import routeData from '../assets/constantFiles/routeConstants';
+
  
 export class HomeComponent extends Component{
     render(){
@@ -9,12 +11,13 @@ export class HomeComponent extends Component{
                 <div className="homePage-welcome-div col-md-12 pd0">
                   <div className="homePage-welcome-text"> 
                       <div > 
-                        <img src={logo} alt="Learning Streets" />   
+                        {/* <img src={reactStreetLogo} alt="Learning Streets" />    */}
                       </div>  
                       
                       <div id="heading">  
-                        Learning  <br />
-                        <b> Streets </b> <br />
+                        <p>  Welcome to  </p>   <br />
+                          ReactJs  <br />
+                        <b> Street </b> <br /> 
                         <b id="motto"> Learn &#124; Share | Help  </b>
                         </div>   
         
@@ -23,37 +26,15 @@ export class HomeComponent extends Component{
                 </div> 
 
                 <div className="content-width" > 
-            
                    <div className="homePage-quotes-div">
-                    
                     <p> 
-                        <q>Never stop Learning, because life never stops teaching.</q> 
-                        <em> ~Anonymous </em>
-                    </p>
-
-                    <p> 
-                        <q>Share your knowledge. It is a way to achieve immortality.</q>  
-                        <em> ~Dalai Lama </em>
-                    </p>
-
-                    <p> 
-                        <q>We can't help everyone, but everyone can Help  someone.</q>  
-                        <em> ~Ronald Reagan </em>
-                    </p>
-
-                </div> 
+                        <q>This street will let you know understand the basics of <b> ReactJs</b> and help you to begin with it.</q>  
+                    </p> 
+                  </div> 
 
                   <div className="homePage-content-div row col-md-12 pd0">
                       <div className="homePage-content-card col-md-4">
-                        <p className="hpcc-heading"> Who Are We?</p>
-                        <p className="hpcc-description"> 
-                          We are just like you with lots of zeal to learn new things. We are always ready for learning.
-                          In our family we have many people to contribute and we also welcome you to in our family.  
-                        </p>
-                      </div>
-
-                      <div className="homePage-content-card col-md-4">
-                        <p className="hpcc-heading"> Our Ambition</p>
+                        <p className="hpcc-heading"> About Street</p>
                         <p className="hpcc-description"> 
                           Our goal is that each and every one who is interested to learn new things should get it without any cost.
                           Towards this we are doing a bit from our side such that our knowledge and experience could be shared among all those who are seeking for it.
@@ -61,12 +42,33 @@ export class HomeComponent extends Component{
                       </div>
 
                       <div className="homePage-content-card col-md-4">
-                        <p className="hpcc-heading"> Learn | Share | Help</p>
+                        <p className="hpcc-heading"> Your Takeaway</p>
+                        <p className="hpcc-description"> 
+                          We are just like you with lots of zeal to learn new things. We are always ready for learning.
+                          In our family we have many people to contribute and we also welcome you to in our family.  
+                        </p>
+                      </div>
+
+                      <div className="homePage-content-card col-md-4">
+                        <p className="hpcc-heading"> Our Expectation</p>
                         <p className="hpcc-description"> 
                           Always have a zeal to <b>Learn</b>. 
                           Whatever you know it's good to <b>Share</b> with people and <b>Help</b> them whenever they need it.
                           We will not loose anything by sharing something especially 'knowledge'.
                         </p>
+                      </div>
+                  </div>
+
+                  <div className="homePage-content-div col-md-12 pd0">
+                      <div className="homePage-content-card">
+                        <p className="hpcc-heading"> Learning Content</p>
+                        <ul className="hpcc-description">
+                          {routeData.map(_item => 
+                              <li key={_item.routeKey}>
+                                  <b> {_item.routeLinkText} :  </b>    {_item.routeLinkDescription}
+                              </li> 
+                          )}
+                        </ul> 
                       </div>
                   </div>
                 </div>
@@ -75,16 +77,16 @@ export class HomeComponent extends Component{
     }
 
 
-    goToSiteContent = () =>{
+    // goToSiteContent = () =>{
 
-      <Route render={({ history}) => (
-        <button
-          type='button'
-          onClick={() => { history.push('/new-location') }}
-        >
-          Click Me!
-        </button>
-      )} />
+    //   <Route render={({ history}) => (
+    //     <button
+    //       type='button'
+    //       onClick={() => { history.push('/new-location') }}
+    //     >
+    //       Click Me!
+    //     </button>
+    //   )} />
 
-    }
+    // }
 }

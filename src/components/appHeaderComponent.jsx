@@ -1,5 +1,6 @@
 import {Component, React} from 'react';
-import logo from '../assets/images/logo/learningStreetsLogo.png';
+// import logo from '../assets/images/logo/learningStreetsLogo.png';
+import reactStreetLogo from '../assets/images/logo/reactStreetLogo.png';
 
 // importing app name from constant file
 import { AppName }  from '../assets/constantFiles/appConstants';
@@ -42,10 +43,9 @@ export class AppHeaderComponent extends Component{
             // <div className="App-header-div row col-md-12"> 
             <div className="App-header-div"> 
             <div className="content-width" style={{"display":"flex"}}> 
-                    <img src={logo}   className="App-logo" alt="logo" />  
-                    <span className="App-heading">  {AppName} <br/> Street      
-                    </span> 
-                    <button type="button" >Docs</button>
+                    <img src={reactStreetLogo}   className="App-logo" alt="logo" />  
+                    <span className="App-heading">  {AppName} <br/> <b> Street   </b>   
+                    </span>  
                 
 
                 <div className="social-media-div" > 

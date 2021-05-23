@@ -1,5 +1,5 @@
 // This script will increase the build version which we will include in the package.json file in the deploy 
-var filePath = './src/assets/buildInfo.json';
+var filePath = './src/assets/constantFiles/buildInfo.json';
 var fs = require('fs');
 fs.readFile(filePath,function(err,fileContent) {
     if (err) throw err;

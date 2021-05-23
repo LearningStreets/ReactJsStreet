@@ -4,7 +4,7 @@ import {AppRoute} from './Route';
 import AppMenuComponent from './components/appMenuComponent';
 import AppFooterComponent from './components/appFooterComponent';
 import {AppHeaderComponent} from './components/appHeaderComponent';
-import {HomeComponent} from './components/homeComponent';
+// import {HomeComponent} from './components/homeComponent';
 
 
 
@@ -33,7 +33,8 @@ class App extends Component{
                   <i className="bi bi-list open-menu" onClick={this.changeCss} ></i>  
                   <i className="bi bi-chevron-compact-right menu-chevron" ></i>  
                     {this.state.activeRouteLinkText === "Home" ? 
-                    <i className="bi bi-house menu-home theme-color-text" ></i> : 
+                    // <i className="bi bi-house menu-home theme-color-text" ></i>
+                    <span className="menu-route-text"> Welcome to ReactJs Street </span>: 
                     <span className="menu-route-text"> { this.state.activeRouteLinkText}   </span> 
                     }
                   
@@ -71,31 +72,31 @@ class App extends Component{
     this.setState({activeRouteLinkText: _newText})
   }
 
-  componentDidMount() {
-    // {this.checkActiveRouteLinkText()}
-  }
+  // componentDidMount() {
+  //   // {this.checkActiveRouteLinkText()}
+  // }
 
-  checkActiveRouteLinkText = () => {
-    if(this.state.activeRouteLinkText === "Home")
-     {
-      var firstLandingPageDiv = document.getElementById("firstLandingPageDiv");
-      if (firstLandingPageDiv.classList.contains("displayNone")){
-        firstLandingPageDiv.classList.remove("displayNone");
-      }
+  // checkActiveRouteLinkText = () => {
+  //   if(this.state.activeRouteLinkText === "Home")
+  //    {
+  //     var firstLandingPageDiv = document.getElementById("firstLandingPageDiv");
+  //     if (firstLandingPageDiv.classList.contains("displayNone")){
+  //       firstLandingPageDiv.classList.remove("displayNone");
+  //     }
 
-      document.getElementById("thisSiteContentDiv").classList.add("displayNone");
-     }
-     else
-     {
+  //     document.getElementById("thisSiteContentDiv").classList.add("displayNone");
+  //    }
+  //    else
+  //    {
 
-      var thisSiteContentDiv = document.getElementById("thisSiteContentDiv");
-      if (thisSiteContentDiv.classList.contains("displayNone")){
-        thisSiteContentDiv.classList.remove("displayNone");
-      }
-      document.getElementById("firstLandingPageDiv").classList.add("displayNone"); 
+  //     var thisSiteContentDiv = document.getElementById("thisSiteContentDiv");
+  //     if (thisSiteContentDiv.classList.contains("displayNone")){
+  //       thisSiteContentDiv.classList.remove("displayNone");
+  //     }
+  //     document.getElementById("firstLandingPageDiv").classList.add("displayNone"); 
 
-     }
-  }
+  //    }
+  // }
 
   // in the below method we are checking the css and applying additional css on the basis of checks
   changeCss = () => {
