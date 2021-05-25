@@ -166,10 +166,13 @@ code {
 
 #menu-list-container {
   position: relative;
-  /* width: 25rem;
-  max-width: 25rem; */
+  min-width: 22rem;
+  max-width: 22rem;
   background-color: white;
   left: 0;
+  min-height: 600px;
+  max-height: 600px;
+  overflow-x: auto;
 }
 
 .menu-list-content {

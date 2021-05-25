@@ -13,6 +13,7 @@ import { FeedBackComponent } from '../../components/feedbackComponent';
 import { JSXComponent } from '../../components/jsxComponent';
 import { HelloWorldComponent } from '../../components/helloWorldComponent';
 import { ReactLifecycleComponent } from '../../components/reactLifecycleComponent';
+import { ReactAPIComponent } from '../../components/reactAPIComponent';
 
 const routeData = [
     {
@@ -112,6 +113,13 @@ const routeData = [
         routeLinkText:"FeedBack",
         routeLinkDescription:"Feedback",
         routeComponent: FeedBackComponent
+    },
+    {
+        routeKey:"ReactAPI",
+        routePath:'/ReactAPI',
+        routeLinkText:"React API",
+        routeLinkDescription:"Let's communicate with other servers through APIs",
+        routeComponent: ReactAPIComponent
     }
     // {
     //     routeKey:"1",
