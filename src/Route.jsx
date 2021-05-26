@@ -1,23 +1,22 @@
-import {HashRouter as Router, Switch, Route} from 'react-router-dom';
-// importing constant file to read the links
-import routeData from './assets/constantFiles/routeConstants';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import { HomeComponent } from './components/homeComponent';
-
-// Importing Component
-  // import { HomeComponent } from './components/homeComponent';
-
+import { ReactDocsComponent } from './components/reactDocsComponent';
+import  PageNotFoundComponent  from './components/pageNotFoundComponent';
 
 export const AppRoute= () => {
     return (
-        <Router>
-            <Switch>  
-                {routeData.map(_item => 
-                        <Route key={_item.routeKey}  path={_item.routePath} component={_item.routeComponent} />
-                )}
-                {/* Default Route */}
-                <Route exact path='/' component={HomeComponent} /> 
-          </Switch>
-        </Router>
+      <Router>
+        <Switch>   
+            {/* default component */}
+            <Route exact path='/' component={HomeComponent} /> 
+
+            {/* ReactDocsDocs component */}
+            <Route  path='/ReactDocs' component={ReactDocsComponent} /> 
+
+              {/* Page Not Found component */}
+            <Route  path='*' component={PageNotFoundComponent} /> 
+        </Switch>
+  </Router>
      
     );
 }

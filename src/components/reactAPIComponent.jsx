@@ -5,9 +5,9 @@ import { googlePublicAPI } from '../assets/constantFiles/appConstants';
 
 export class ReactAPIComponent extends React.Component{
 
-    state= {
-        apiData : []
-    }
+    // state= {
+    //     apiData : []
+    // }
 
 
 render(){
@@ -26,7 +26,8 @@ render(){
         )} */}
 
         <br />
-        <button type="button" onClick={this.callPublicAPI}> Call Public API</button>
+        <button type="button" onClick={this.callPublicAPI}> Call Public API </button>
+        <h4> Once you clicked on above button check the console menu for log</h4>
     </div>
     )
 }

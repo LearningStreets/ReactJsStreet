@@ -1,30 +1,26 @@
-import {Component,React} from 'react';
-// import logo from '../assets/images/logo/learningStreetsLogo.png';
-// import reactStreetLogo from '../assets/images/logo/reactStreetLogo.png';
-import routeData from '../assets/constantFiles/routeConstants';
+import {Component,React} from 'react'; 
+import   BodyScrollToTop   from './utilFunctions';
  
+import {Link} from 'react-router-dom';
+ 
+
+
 export class HomeComponent extends Component{
     render(){
         return(
-          <div>
+          <div style={{"background" :"white"}}>
                 <div className="homePage-welcome-div col-md-12 pd0">
                   <div className="homePage-welcome-text"> 
-                      <div > 
-                        {/* <img src={reactStreetLogo} alt="Learning Streets" />    */}
-                      </div>  
-                      
                       <div id="heading">  
                         <p>  Welcome to  </p>   <br />
                           ReactJs  <br />
                         <b> Street </b> <br /> 
                         <b id="motto"> Learn &#124; Share | Help  </b>
                         </div>   
-        
-                    
                     </div> 
                 </div> 
 
-                <div  > 
+                <div  className="content-width" > 
                    <div className="homePage-quotes-div">
                     <p> 
                         <q>This street will make you understand the basics of <b> ReactJs</b> and help you to begin with it.</q>  
@@ -56,42 +52,22 @@ export class HomeComponent extends Component{
                           We will not loose anything by sharing something especially 'knowledge'.
                         </p>
                       </div>
-                  </div>
+                  </div> 
 
-                  <div className="homePage-content-div col-md-12 pd0">
-                      <div className="homePage-content-card">
-                        <p className="hpcc-heading"> Learning Content </p>
-                        <div className="hpcc-learningContent">  
-                          {routeData.map(_item => 
-                              <div className="row col-md-12 pd0" key={_item.routeKey}>
-                                <div className="pageText col-md-4"> {_item.routeLinkText} </div> 
-                                <div className="col-md-8"> {_item.routeLinkDescription} </div> 
-                              </div> 
-                          )}
-
-                          <br /> 
-                          <i >
-                            <b> Note</b> : Kindly use above <code> Menu Icon (<i className="bi bi-list"></i>)</code> at top-left corner to read more about the content.
-                          </i>
-                         </div>   
-                      </div>
-                  </div>
+                  <br />
+                  <center> 
+                  <Link className="getStarted-button" onClick={()=> BodyScrollToTop()}   to={'/ReactDocs/GettingStarted'}   activeclassname="menu-list-a-active"  >
+                    Let's Get Started  
+                  </Link> 
+                  </center>
+                  <br />
+                  <br />
                 </div>
+
+
+                
+                  
           </div>
         )
     }
-
-
-    // goToSiteContent = () =>{
-
-    //   <Route render={({ history}) => (
-    //     <button
-    //       type='button'
-    //       onClick={() => { history.push('/new-location') }}
-    //     >
-    //       Click Me!
-    //     </button>
-    //   )} />
-
-    // }
 }
