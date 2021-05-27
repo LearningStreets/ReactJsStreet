@@ -2,7 +2,7 @@ import {Component,React} from 'react';
 import   BodyScrollToTop   from './utilFunctions';
  
 import {Link} from 'react-router-dom';
- 
+import { routePathPrefix } from '../assets/constantFiles/appConstants';
 
 
 export class HomeComponent extends Component{
@@ -56,7 +56,7 @@ export class HomeComponent extends Component{
 
                   <br />
                   <center> 
-                  <Link className="getStarted-button" onClick={()=> BodyScrollToTop()}   to={'/ReactDocs/GettingStarted'}   activeclassname="menu-list-a-active"  >
+                  <Link className="getStarted-button" onClick={()=> BodyScrollToTop()}   to={routePathPrefix +'ReactDocs/GettingStarted'}   activeclassname="menu-list-a-active"  >
                     Let's Get Started  
                   </Link> 
                   </center>
