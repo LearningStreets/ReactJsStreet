@@ -43,19 +43,19 @@ export class AppHeaderComponent extends Component{
             // <div className="App-header-div row col-md-12"> 
             <div className="App-header-div"> 
             <div className="content-width" style={{"display":"flex"}}> 
-                    <a href={AppUrl} >  
-                        <img src={reactStreetLogo}    className="App-logo" alt="logo" />   
-                         <span className="App-heading">  {AppName} <br />  <b>   Street    </b> 
+                    {/* <a href={AppUrl} >   */}
+                        {/* <img src={reactStreetLogo}    className="App-logo" alt="logo" />    */}
+                         <span className="App-heading">  {AppName}     Street   
                         </span>  
-                    </a> 
+                    {/* </a>  */}
           
 
-                <div className="social-media-div" > 
+                {/* <div className="social-media-div" > 
                     <span >
                         <i className="bi bi-facebook"></i> 
                         <i className="bi bi-twitter"></i>  
                     </span> 
-                </div> 
+                </div>  */}
 
                 
 

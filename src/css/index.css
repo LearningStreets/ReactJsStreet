@@ -7,7 +7,7 @@
   --card-border-color: rgba(128, 0, 128, 0.8);
   --logo-bg-color: #b3db98;
   --headings-color: rgb(108, 110, 112);
-  --theme-color: #558d2f;
+  --theme-color: #a9d18e;
   --light-grey-bg: rgba(233, 233, 233);
 }
 
@@ -27,7 +27,7 @@ code {
 }
 
 .container {
-  padding: 0px !important;
+  padding: 5px !important;
 }
 
 .content-width {
@@ -51,24 +51,19 @@ code {
   display: flex;
   overflow: hidden;
   height: 60px;
-}
-.App-header-div a {
-  display: flex;
-  text-decoration: none;
+
+  background: var(--header-footer-bg-color)
+    url("../assets/images/headerBG2.png") repeat center left;
+  background-size: 26%;
 }
 
-.App-header-div a:hover {
-  text-decoration: none;
+.App-header-div span {
+  width: 100%;
+  color: white;
+  font-size: 35px;
+  font-weight: 600;
+  color: var(--theme-color);
 }
-
-.App-logo {
-  border: none;
-}
-/* 
-.App-heading-div {
-  text-align: center;
-  align-self: baseline;
-} */
 
 .App-heading {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -135,6 +130,7 @@ code {
   align-items: center;
   text-align: center;
   color: rgb(231, 228, 228);
+  padding-top: 2rem;
 }
 
 .App-link {
@@ -242,7 +238,7 @@ code {
 }
 
 .card-container {
-  font-family: "Calibri";
+  /* font-family: "Calibri"; */
   text-align: center;
 }
 
@@ -289,7 +285,7 @@ code {
 .feedback-textarea,
 .feedback-inputBox {
   color: var(--theme-color);
-  font-family: "Calibri";
+  /* font-family: "Calibri"; */
   width: 90%;
   border: none;
   min-height: 12rem;
@@ -354,7 +350,7 @@ code {
 }
 
 .feedback-container {
-  font-family: "Calibri";
+  /* font-family: "Calibri"; */
   min-height: 40rem;
   max-height: 40rem;
   overflow-y: scroll;
@@ -381,7 +377,7 @@ code {
   flex-direction: column;
   text-align: justify;
   border-top-left-radius: 25px;
-  font-family: Calibri;
+  /* font-family: Calibri; */
 }
 
 .feedback-div > .feedback-description {
@@ -395,7 +391,7 @@ code {
 
 .footer-subheading {
   font-size: 1.7rem;
-  font-family: "Calibri";
+  /* font-family: "Calibri"; */
   font-weight: 200;
 }
 .otherStreet,
@@ -406,7 +402,7 @@ code {
 .otherStreet > ul,
 .contactUs > ul {
   font-size: 1.1rem;
-  font-family: "Calibri";
+  /* font-family: "Calibri"; */
   font-weight: 200;
   padding: 0px !important;
   list-style: none;
@@ -414,13 +410,20 @@ code {
 
 .footer-getCode {
   text-align: center;
-  padding-top: 3rem;
-  padding-bottom: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: var(--header-footer-darkbg-color);
+}
+
+.App-footerBottom {
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   background-color: var(--header-footer-darkbg-color);
 }
 
 .footer-buildVersion {
-  font-family: "Calibri";
+  /* font-family: "Calibri"; */
   font-size: 0.9rem;
   font-weight: 100;
 }
@@ -431,15 +434,16 @@ code {
   color: white;
   border: 1px solid white;
   padding: 0.4rem;
-  border-radius: 10px;
+  font-size: 25px;
+  /* border-radius: 10px; */
 }
 
 .sourceCode-button:hover {
-  background-color: rgb(244, 225, 255);
+  /* background-color: rgb(244, 225, 255); */
   text-decoration: none;
   color: var(--theme-color);
   border: 1px solid var(--theme-color);
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 
 /* Start: Feedback page css */
@@ -452,13 +456,9 @@ code {
 }
 
 .content-heading {
-  /* border-bottom: 1px solid black; */
   color: rgb(46, 49, 49);
-  /* color: var(--theme-color); */
   padding: 1rem;
-  /* font-size: 1.8rem; */
-  font-family: "Calibri";
-  font-weight: bolder;
+  font-weight: 600;
   padding-left: 0rem;
 }
 
@@ -474,7 +474,7 @@ code {
 .homePage-welcome-text {
   width: 100%;
   padding: 0.5rem;
-  font-family: "Calibri";
+  /* font-family: "Calibri"; */
   background-color: var(--header-footer-bg-color);
 }
 
@@ -484,12 +484,16 @@ code {
 
 .homePage-welcome-text #heading {
   font-size: 75px;
-  line-height: 50px;
+  line-height: 60px;
   color: rgb(231, 228, 228);
   width: 100%;
   padding-top: 1rem;
   letter-spacing: 3px;
   font-weight: 300;
+}
+
+.homePage-welcome-text #heading p {
+  margin-bottom: 0;
 }
 
 .homePage-welcome-text #heading p {
@@ -570,9 +574,10 @@ code {
 }
 
 .getStarted-button {
-  font-size: 55px;
+  font-size: 60px;
+  /* font-family: Calibri; */
   color: var(--headings-color);
-  font-weight: 600;
+  font-weight: 100;
   text-decoration: none;
 }
 
